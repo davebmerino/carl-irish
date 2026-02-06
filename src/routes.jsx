@@ -1,8 +1,7 @@
 import { createBrowserRouter } from "react-router";
-import Rsvp from "./pages/rsvp/rsvp.jsx";
+import Rsvp from "./pages/rsvp/Rsvp.jsx";
 import Firstpage from "./pages/firstpage/Firstpage.jsx";
 import Home from "./pages/homepage/Home.jsx";
-import Landingpage from "./pages/firstpage/Landingpage.jsx";
 
 export const router = createBrowserRouter([
   {
