@@ -36,14 +36,16 @@ export default function Gallery() {
   return (
     <>
       {/* Gallery Section */}
-      <section className="py-20 px-4" data-testid="gallery-section">
+      <section
+        className="py-20 px-4 bg-wedding-bg/30"
+        data-testid="gallery-section">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <Heart className="w-8 h-8 text-wedding-warm fill-wedding-warm mx-auto mb-4" />
-            <h2 className="font-playfair text-4xl md:text-5xl font-semibold text-wedding-deep mb-4">
-              Gallery
+            <Heart className="w-8 h-8 text-wedding-primary fill-wedding-primary mx-auto mb-4" />
+            <h2 className="font-cormorant text-4xl md:text-5xl font-light text-wedding-deep mb-4 tracking-wider">
+              Our Gallery
             </h2>
-            <div className="h-px w-24 bg-wedding-soft mx-auto"></div>
+            <div className="h-px w-24 bg-wedding-primary mx-auto"></div>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
