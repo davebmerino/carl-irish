@@ -55,7 +55,7 @@ export default function Landingpage() {
           </div>
 
           {/* Couple Names */}
-          <div className="mb-8">
+          <div className="mb-3 text-wedding-main">
             <h2 className="font-playfair text-3xl md:text-4xl font-semibold text-wedding-deep mb-2">
               Carl & Irish
             </h2>
@@ -64,13 +64,13 @@ export default function Landingpage() {
           {/* Wedding Details */}
           <div className="space-y-3 mb-10 font-manrope text-wedding-main">
             <p className="text-lg" data-testid="wedding-date">
-              <span className="font-medium">Saturday, October 5, 2026</span>
+              <span className="font-medium uppercase">Are getting married</span>
             </p>
             <p className="text-base" data-testid="wedding-time">
-              Ceremony at 4:00 PM
+              Saturday, October 5, 2026
             </p>
             <p className="text-base" data-testid="wedding-venue">
-              St. Ursula Parish
+              @ St. Ursula Parish
               <br />
               Binangonan
             </p>
