@@ -22,7 +22,7 @@ export default function Navbar() {
             to="/"
             className="flex items-center gap-2"
             data-testid="nav-logo">
-            <Heart className="w-6 h-6 text-wedding-warm fill-wedding-warm" />
+            <Heart className="w-6 h-6 text-wedding-primary fill-wedding-primary" />
             <span className="font-script text-2xl text-wedding-deep">
               Our Wedding
             </span>
@@ -36,8 +36,8 @@ export default function Navbar() {
                 to={link.path}
                 className={`font-manrope font-medium transition-colors ${
                   location.pathname === link.path
-                    ? "text-wedding-warm"
-                    : "text-wedding-main hover:text-wedding-warm"
+                    ? "text-wedding-primary"
+                    : "text-wedding-main hover:text-wedding-primary"
                 }`}
                 data-testid={`nav-link-${link.label.toLowerCase()}`}>
                 {link.label}
@@ -48,7 +48,7 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden text-wedding-main hover:text-wedding-warm transition-colors"
+            className="md:hidden text-wedding-main hover:text-wedding-primary transition-colors"
             data-testid="mobile-menu-button">
             {mobileMenuOpen ? (
               <X className="w-6 h-6" />
@@ -72,8 +72,8 @@ export default function Navbar() {
                 onClick={() => setMobileMenuOpen(false)}
                 className={`block font-manrope font-medium py-2 transition-colors ${
                   location.pathname === link.path
-                    ? "text-wedding-warm"
-                    : "text-wedding-main hover:text-wedding-warm"
+                    ? "text-wedding-primary"
+                    : "text-wedding-main hover:text-wedding-primary"
                 }`}
                 data-testid={`mobile-nav-link-${link.label.toLowerCase()}`}>
                 {link.label}
