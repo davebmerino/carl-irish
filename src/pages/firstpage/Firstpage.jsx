@@ -1,4 +1,4 @@
-import profileImg from "../../assets/pictures/mainprofile.jpg";
+import profileImg from "../../assets/pictures/mainprofile.jpeg";
 import Invites from "../../components/invites/Invites.jsx";
 import Rsvpmodal from "../../components/modal/Rsvpmodal.jsx";
 import { useState } from "react";

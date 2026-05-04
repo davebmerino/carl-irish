@@ -1,4 +1,4 @@
-import profileImg from "../../assets/pictures/mainprofile.jpg";
+import profileImg from "../../assets/pictures/mainprofile.jpeg";
 
 import { useNavigate } from "react-router-dom";
 import { Heart } from "lucide-react";
@@ -25,8 +25,8 @@ export default function Landingpage() {
         <div className="bg-white/80 backdrop-blur rounded-2xl p-8 md:p-12 max-w-2xl w-full text-center shadow-2xl">
           {/* Heart Icon */}
           <div className="flex justify-center mb-6">
-            <div className="bg-wedding-warm/20 p-4 rounded-full">
-              <Heart className="w-8 h-8 text-wedding-warm fill-wedding-warm" />
+            <div className="bg-wedding-primary/20 rounded-full">
+              <Heart className="w-8 h-8 text-wedding-primary fill-wedding-primary" />
             </div>
           </div>
 
@@ -39,11 +39,11 @@ export default function Landingpage() {
 
           {/* Divider */}
           <div className="flex items-center justify-center my-6">
-            <div className="h-px w-20 bg-wedding-soft"></div>
+            <div className="h-px w-20 bg-wedding-primary"></div>
             <div className="mx-4">
-              <Heart className="w-4 h-4 text-wedding-warm fill-wedding-warm" />
+              <Heart className="w-4 h-4 text-wedding-primary fill-wedding-primary" />
             </div>
-            <div className="h-px w-20 bg-wedding-soft"></div>
+            <div className="h-px w-20 bg-wedding-primary"></div>
           </div>
 
           <div className="mx-auto my-6 flex flex-col items-center bg-white/80 backdrop-blur  rounded-2xl shadow-xl border w-full max-w-sm">
@@ -55,9 +55,9 @@ export default function Landingpage() {
           </div>
 
           {/* Couple Names */}
-          <div className="mb-3 text-wedding-main">
+          <div className="mb-3">
             <h2 className="font-playfair text-3xl md:text-4xl font-semibold text-wedding-deep mb-2">
-              Carl & Irish
+              Carl Royce & Irish
             </h2>
           </div>
 
@@ -80,7 +80,7 @@ export default function Landingpage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
               onClick={() => navigate("/rsvp")}
-              className="btn-primary bg-wedding-warm text-white px-8 py-3 rounded-full font-medium tracking-wide shadow-md hover:bg-wedding-warm/90"
+              className="btn-primary bg-wedding-primary text-white px-8 py-3 rounded-full font-medium tracking-wide shadow-md hover:bg-wedding-main"
               data-testid="rsvp-button">
               RSVP
             </button>
