@@ -46,11 +46,11 @@ export default function Landingpage() {
             <div className="h-px w-20 bg-wedding-primary"></div>
           </div>
 
-          <div className="mx-auto my-6 flex flex-col items-center bg-white/80 backdrop-blur  rounded-2xl shadow-xl border w-full max-w-sm">
+          <div className="mx-auto my-6 flex flex-col items-center bg-white/80 backdrop-blur  rounded-2xl shadow-xl border h-[450px] ">
             <img
               src={profileImg}
               alt="Wedding Profile"
-              className=" object-cover rounded-xl shadow-md border border-amber-100 "
+              className=" object-cover rounded-xl shadow-md border border-amber-100 h-[450px] w-full "
             />
           </div>
 
