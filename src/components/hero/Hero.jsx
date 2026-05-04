@@ -1,9 +1,10 @@
-import banner from "../../assets/pictures/banner.jpg";
+import banner from "../../assets/pictures/banner.jpeg";
 
 export default function Hero() {
   return (
-    <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
-      <div
+    <>
+      {/* <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
+       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage: `url(${banner})`,
@@ -20,6 +21,30 @@ export default function Hero() {
           Carl & Irish
         </p>
       </div>
-    </section>
+    </section> */}
+      {/* Hero Section */}
+
+      <section
+        className="relative h-[60vh] flex items-center justify-center overflow-hidden"
+        data-testid="hero-section">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: `url(${banner})`,
+          }}>
+          <div className="absolute inset-0 bg-wedding-deep/40"></div>
+        </div>
+        <div className="relative z-10 text-center text-white px-4">
+          <h1
+            className="font-script text-5xl md:text-7xl mb-4 text-shadow"
+            data-testid="home-title">
+            Carl Royce & Irish
+          </h1>
+          <p className="font-cormorant text-xl md:text-2xl tracking-widest uppercase">
+            Are Getting Married
+          </p>
+        </div>
+      </section>
+    </>
   );
 }
