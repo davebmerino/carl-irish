@@ -1,3 +1,5 @@
+import banner2 from "../../assets/pictures/banner2.jpeg";
+
 export default function Calendar() {
   return (
     <>
@@ -76,7 +78,7 @@ export default function Calendar() {
             </div>
             <div className="relative h-[400px] rounded-xl overflow-hidden shadow-xl">
               <img
-                src="https://images.unsplash.com/photo-1698897050888-c18a15b6703e?crop=entropy&cs=srgb&fm=jpg&q=85"
+                src={banner2}
                 alt="Couple"
                 className="w-full h-full object-cover"
               />
