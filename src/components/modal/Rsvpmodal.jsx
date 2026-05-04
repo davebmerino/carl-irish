@@ -1,3 +1,5 @@
+import rsvp from "../../assets/pictures/rsvp.jpeg";
+
 export default function Rsvpmodal() {
   return (
     <>
@@ -9,7 +11,7 @@ export default function Rsvpmodal() {
           <div className="relative rounded-xl overflow-hidden shadow-2xl">
             <div className="absolute inset-0">
               <img
-                src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?crop=entropy&cs=srgb&fm=jpg&q=85"
+                src={rsvp}
                 alt="RSVP"
                 className="w-full h-full object-cover"
               />
