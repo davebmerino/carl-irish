@@ -24,15 +24,15 @@ export default function Home() {
         <Hero />
         <Countdown />
         <Calendar />
-        <Rsvpmodal />
-        <Ourstory />
-        <Entourage />
         <Eventdetails />
         <Schedule />
-        <Reminders />
         <Dresscode />
-        <Gallery />
+        <Entourage />
         <TillDeathDoUsPart />
+        <Reminders />
+        <Rsvpmodal />
+        <Ourstory />
+        <Gallery />
         <Contact />
       </div>
       <Footer />
