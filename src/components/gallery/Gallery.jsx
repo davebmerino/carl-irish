@@ -1,19 +1,19 @@
 import { Heart } from "lucide-react";
-import image1 from "../../assets/pictures/2372.jpg";
-import image2 from "../../assets/pictures/2373.jpg";
-import image3 from "../../assets/pictures/2374.jpg";
-import image4 from "../../assets/pictures/2375.jpg";
-import image5 from "../../assets/pictures/2376.jpg";
-import image6 from "../../assets/pictures/2378.jpg";
-import image7 from "../../assets/pictures/2379.jpg";
-import image8 from "../../assets/pictures/2380.jpg";
-import image9 from "../../assets/pictures/2381.jpg";
-import image10 from "../../assets/pictures/mainprofile.jpeg";
-import image11 from "../../assets/pictures/2383.jpg";
-import image12 from "../../assets/pictures/2384.jpg";
-import image13 from "../../assets/pictures/2385.jpg";
-import image14 from "../../assets/pictures/2386.jpg";
-import image15 from "../../assets/pictures/2387.jpg";
+import image1 from "../../assets/pictures/DJI_0783.jpeg";
+import image2 from "../../assets/pictures/DSC04257.jpeg";
+import image3 from "../../assets/pictures/DSC04265.jpeg";
+import image4 from "../../assets/pictures/DSC04284.jpeg";
+import image5 from "../../assets/pictures/DSC04288.jpeg";
+import image6 from "../../assets/pictures/DSC04297.jpeg";
+import image7 from "../../assets/pictures/DSC04307.jpeg";
+import image8 from "../../assets/pictures/DSC04436.jpeg";
+import image9 from "../../assets/pictures/DSC04446.jpeg";
+import image10 from "../../assets/pictures/DSC04446.jpeg";
+import image11 from "../../assets/pictures/DSC04450.jpeg";
+import image12 from "../../assets/pictures/DSC04453.jpeg";
+import image13 from "../../assets/pictures/DSC04456.jpeg";
+import image14 from "../../assets/pictures/DSC04468.jpeg";
+import image15 from "../../assets/pictures/DSC04487.jpeg";
 
 export default function Gallery() {
   const galleryImages = [

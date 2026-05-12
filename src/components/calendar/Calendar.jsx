@@ -29,8 +29,6 @@ export default function Calendar() {
                   null,
                   null,
                   null,
-                  null,
-                  null,
                   1,
                   2,
                   3,
@@ -61,6 +59,7 @@ export default function Calendar() {
                   28,
                   29,
                   30,
+                  31,
                 ].map((date, i) => (
                   <div
                     key={i}
