@@ -39,8 +39,8 @@ export default function Schedule() {
       <section className="py-20 px-4" data-testid="schedule-section">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <Clock className="w-8 h-8 text-wedding-warm mx-auto mb-4" />
-            <h2 className="font-playfair text-4xl md:text-5xl font-semibold text-wedding-deep mb-4">
+            <Clock className="w-8 h-8 text-wedding-primary mx-auto mb-4" />
+            <h2 className="font-cormorant text-4xl md:text-5xl font-light text-wedding-deep mb-4 tracking-wider">
               Schedule
             </h2>
             <div className="h-px w-24 bg-wedding-soft mx-auto"></div>
@@ -54,7 +54,7 @@ export default function Schedule() {
                 data-testid={`schedule-item-${index}`}>
                 <div className="flex flex-col md:flex-row md:items-center gap-4">
                   <div className="md:w-24 flex-shrink-0">
-                    <span className="font-playfair text-lg font-semibold text-wedding-warm">
+                    <span className="font-playfair text-lg font-semibold text-wedding-primary">
                       {item.time}
                     </span>
                   </div>

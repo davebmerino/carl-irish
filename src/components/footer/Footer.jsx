@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="text-center">
             {/* Logo/Title */}
             <div className="flex justify-center items-center gap-2 mb-4">
-              <Heart className="w-6 h-6 text-wedding-warm fill-wedding-warm" />
+              <Heart className="w-6 h-6 text-wedding-primary fill-wedding-primary" />
               <span className="font-script text-3xl">Our Wedding</span>
             </div>
 
@@ -51,7 +51,7 @@ export default function Footer() {
             </p>
             <p className="font-manrope text-wedding-secondary text-sm mt-2">
               Made with{" "}
-              <Heart className="inline w-4 h-4 text-wedding-warm fill-wedding-warm" />{" "}
+              <Heart className="inline w-4 h-4 text-wedding-warm fill-wedding-primary" />{" "}
               for our special day
             </p>
           </div>

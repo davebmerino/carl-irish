@@ -1,19 +1,28 @@
 import { Heart } from "lucide-react";
 import image1 from "../../assets/pictures/DJI_0783.jpeg";
-import image2 from "../../assets/pictures/DSC04257.jpeg";
+import image2 from "../../assets/pictures/DSC04876.jpeg";
 import image3 from "../../assets/pictures/DSC04265.jpeg";
 import image4 from "../../assets/pictures/DSC04284.jpeg";
-import image5 from "../../assets/pictures/DSC04288.jpeg";
+import image5 from "../../assets/pictures/DSC04741.jpeg";
 import image6 from "../../assets/pictures/DSC04297.jpeg";
 import image7 from "../../assets/pictures/DSC04307.jpeg";
-import image8 from "../../assets/pictures/DSC04436.jpeg";
+import image8 from "../../assets/pictures/DSC04750.jpeg";
 import image9 from "../../assets/pictures/DSC04446.jpeg";
-import image10 from "../../assets/pictures/DSC04446.jpeg";
+import image10 from "../../assets/pictures/DSC04988.jpeg";
 import image11 from "../../assets/pictures/DSC04450.jpeg";
-import image12 from "../../assets/pictures/DSC04453.jpeg";
-import image13 from "../../assets/pictures/DSC04456.jpeg";
+import image12 from "../../assets/pictures/DSC05029.jpeg";
+import image13 from "../../assets/pictures/DSC05007.jpeg";
 import image14 from "../../assets/pictures/DSC04468.jpeg";
 import image15 from "../../assets/pictures/DSC04487.jpeg";
+import image16 from "../../assets/pictures/DSC04644.jpeg";
+import image17 from "../../assets/pictures/DSC04904.jpeg";
+import image18 from "../../assets/pictures/DSC04516.jpeg";
+import image19 from "../../assets/pictures/DSC05073.jpeg";
+import image20 from "../../assets/pictures/DSC04904.jpeg";
+import image21 from "../../assets/pictures/DSC04534.jpeg";
+import image22 from "../../assets/pictures/DSC04559.jpeg";
+import image23 from "../../assets/pictures/DSC04754.jpeg";
+import image24 from "../../assets/pictures/DSC04760.jpeg";
 
 export default function Gallery() {
   const galleryImages = [
@@ -32,6 +41,15 @@ export default function Gallery() {
     image13,
     image14,
     image15,
+    image16,
+    image17,
+    image18,
+    image19,
+    image20,
+    image21,
+    image22,
+    image23,
+    image24,
   ];
   return (
     <>

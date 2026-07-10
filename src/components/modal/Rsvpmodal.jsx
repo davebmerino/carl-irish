@@ -1,4 +1,5 @@
 import rsvp from "../../assets/pictures/rsvp.jpeg";
+import { Link } from "react-router-dom";
 
 export default function Rsvpmodal() {
   return (
@@ -28,12 +29,13 @@ export default function Rsvpmodal() {
                 a moment to complete this RSVP form to help us prepare with love
                 and care. We can't wait to share this beautiful day with you.
               </p>
-              <button
-                onClick={() => navigate("/rsvp")}
-                className="bg-wedding-primary text-white px-10 py-4 rounded-full font-medium text-lg hover:bg-wedding-main transition-colors shadow-lg"
-                data-testid="rsvp-cta-button">
-                Click Here to RSVP
-              </button>
+              <Link to="/rsvp">
+                <button
+                  className="bg-wedding-primary text-white px-10 py-4 rounded-full font-medium text-lg hover:bg-wedding-main transition-colors shadow-lg"
+                  data-testid="rsvp-cta-button">
+                  Click Here to RSVP
+                </button>
+              </Link>
             </div>
           </div>
         </div>

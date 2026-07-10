@@ -64,7 +64,7 @@ export default function Calendar() {
                   <div
                     key={i}
                     className={`p-2 text-sm font-manrope ${
-                      date === 10
+                      date === 3
                         ? "bg-wedding-primary text-white rounded-full font-bold"
                         : date
                           ? "text-wedding-deep"

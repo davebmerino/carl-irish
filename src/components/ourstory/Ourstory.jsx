@@ -1,40 +1,14 @@
 import { Heart } from "lucide-react";
 import storyimg from "../../assets/pictures/2374.jpg";
 
-import image1 from "../../assets/pictures/2372.jpg";
-import image2 from "../../assets/pictures/2373.jpg";
-import image3 from "../../assets/pictures/2374.jpg";
-import image4 from "../../assets/pictures/2375.jpg";
-import image5 from "../../assets/pictures/2376.jpg";
-import image6 from "../../assets/pictures/2378.jpg";
-import image7 from "../../assets/pictures/2379.jpg";
-import image8 from "../../assets/pictures/2380.jpg";
-import image9 from "../../assets/pictures/2381.jpg";
-import image10 from "../../assets/pictures/mainprofile.jpeg";
-import image11 from "../../assets/pictures/2383.jpg";
-import image12 from "../../assets/pictures/2384.jpg";
-import image13 from "../../assets/pictures/2385.jpg";
-import image14 from "../../assets/pictures/2386.jpg";
-import image15 from "../../assets/pictures/2387.jpg";
+import image1 from "../../assets/pictures/DSC04741.jpeg";
+import image2 from "../../assets/pictures/DSC04563.jpeg";
+import image3 from "../../assets/pictures/DSC04992.jpeg";
+
+import image4 from "../../assets/pictures/DSC04660.jpeg";
 
 export default function Ourstory() {
-  const galleryImages = [
-    image1,
-    image2,
-    image3,
-    image4,
-    image5,
-    image6,
-    image7,
-    image8,
-    image9,
-    image10,
-    image11,
-    image12,
-    image13,
-    image14,
-    image15,
-  ];
+  const galleryImages = [image1, image2, image3, image4, ,];
   return (
     <section className="py-20 px-4" data-testid="our-story-section">
       <div className="max-w-6xl mx-auto">
@@ -64,7 +38,7 @@ export default function Ourstory() {
         {/* Photo above story */}
         <div className="relative h-96 mb-8 rounded-xl overflow-hidden shadow-xl">
           <img
-            src="https://images.unsplash.com/photo-1698897050888-c18a15b6703e?crop=entropy&cs=srgb&fm=jpg&q=85"
+            src={image4}
             alt="Couple"
             className="w-full h-full object-cover"
           />
@@ -73,15 +47,19 @@ export default function Ourstory() {
         {/* Story text */}
         <div className="bg-white/90 backdrop-blur-sm rounded-xl p-8 md:p-12 shadow-lg border border-wedding-secondary/30">
           <p className="font-manrope text-wedding-main text-lg leading-relaxed mb-6">
-            Our love story began on a beautiful spring day in 2018, when fate
-            brought us together at a mutual friend's gathering. From that first
-            conversation, we knew there was something special between us.
+            To this day, the couple can no longer remember how they formally
+            met. What they do know is that they shared many common connections.
+            Carl’s elementary classmates became Irish’s high school classmates,
+            and somehow, their paths kept crossing. Whether they were properly
+            introduced or not, one thing remained true—they had already known
+            each other since 2012, even before the basketball incident.
           </p>
           <p className="font-manrope text-wedding-main text-lg leading-relaxed mb-6">
-            Through years of adventures, laughter, and unwavering support for
-            each other, our bond has only grown stronger. We've traveled the
-            world together, built a home filled with love, and created countless
-            memories that we'll cherish forever.
+            Irish was a picky late bloomer when it came to love. She often
+            prayed to God to someday meet “the one” in His perfect time. But
+            like everyone else, she went through difficult seasons—heartbreaks,
+            struggles, and moments when all she wanted was someone to hold onto
+            during the hard days..
           </p>
           <p className="font-manrope text-wedding-main text-lg leading-relaxed">
             Now, we're thrilled to begin this next chapter of our journey

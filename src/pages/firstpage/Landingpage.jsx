@@ -67,7 +67,7 @@ export default function Landingpage() {
               <span className="font-medium uppercase">Are getting married</span>
             </p>
             <p className="text-base" data-testid="wedding-time">
-              Saturday, October 5, 2026
+              Saturday, October 3, 2026
             </p>
             <p className="text-base" data-testid="wedding-venue">
               @ St. Ursula Parish

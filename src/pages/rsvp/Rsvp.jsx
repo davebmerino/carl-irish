@@ -114,8 +114,8 @@ export default function Rsvp() {
     return (
       <div className="min-h-screen flex items-center justify-center px-4">
         <div className="glass-card rounded-2xl p-8 md:p-12 max-w-2xl w-full text-center shadow-2xl">
-          <div className="bg-wedding-warm/20 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
-            <Heart className="w-10 h-10 text-wedding-warm fill-wedding-warm" />
+          <div className="bg-wedding-primary/20 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+            <Heart className="w-10 h-10 text-wedding-primary fill-wedding-primary" />
           </div>
           <h1
             className="font-playfair text-4xl md:text-5xl font-semibold text-wedding-deep mb-4"
@@ -127,7 +127,7 @@ export default function Rsvp() {
           </p>
           <button
             onClick={() => navigate("/home")}
-            className="bg-wedding-warm text-white px-8 py-3 rounded-full font-medium tracking-wide hover:bg-wedding-warm/90 transition-colors"
+            className="bg-wedding-primary text-white px-8 py-3 rounded-full font-medium tracking-wide hover:bg-wedding-warm/90 transition-colors"
             data-testid="back-home-button">
             Back to Home
           </button>
@@ -146,7 +146,7 @@ export default function Rsvp() {
         <div className="max-w-3xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
-            <Heart className="w-8 h-8 text-wedding-warm fill-wedding-warm mx-auto mb-4" />
+            <Heart className="w-8 h-8 text-wedding-primary fill-wedding-primary mx-auto mb-4" />
             <h1
               className="font-playfair text-4xl md:text-5xl font-semibold text-wedding-deep mb-4"
               data-testid="rsvp-title">
@@ -402,7 +402,7 @@ export default function Rsvp() {
             <button
               type="button"
               onClick={addGuest}
-              className="w-full border-2 border-dashed border-wedding-soft hover:border-wedding-warm text-wedding-main hover:text-wedding-warm py-4 rounded-xl font-medium tracking-wide transition-all duration-300 flex items-center justify-center gap-2 mb-8"
+              className="w-full border-2 border-dashed border-wedding-soft hover:border-wedding-main text-wedding-main hover:text-wedding-main py-4 rounded-xl font-medium tracking-wide transition-all duration-300 flex items-center justify-center gap-2 mb-8"
               data-testid="add-guest-button">
               <Plus className="w-5 h-5" />
               Add Guest
@@ -412,7 +412,7 @@ export default function Rsvp() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-wedding-warm text-white py-4 rounded-full font-medium tracking-wide hover:bg-wedding-warm/90 transition-colors shadow-lg disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+              className="w-full bg-wedding-primary text-white py-4 rounded-full font-medium tracking-wide hover:bg-wedding-main transition-colors shadow-lg disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
               data-testid="submit-rsvp-button">
               {loading ? (
                 <>

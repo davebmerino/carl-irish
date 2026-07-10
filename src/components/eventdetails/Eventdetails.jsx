@@ -1,4 +1,5 @@
 import { Calendar, Clock, MapPin, Church, UtensilsCrossed } from "lucide-react";
+import churchImg from "../../assets/pictures/church.jpg";
 
 export default function Eventdetails() {
   return (
@@ -21,7 +22,7 @@ export default function Eventdetails() {
             <div className="bg-white/90 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg border border-wedding-secondary/30">
               <div className="h-48 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1519167758481-83f29da8c43a?crop=entropy&cs=srgb&fm=jpg&q=85"
+                  src={churchImg}
                   alt="Church"
                   className="w-full h-full object-cover"
                 />
@@ -37,30 +38,30 @@ export default function Eventdetails() {
                   <div className="flex items-start gap-3">
                     <Calendar className="w-5 h-5 text-wedding-primary mt-1 flex-shrink-0" />
                     <div>
-                      <p className="font-medium">Saturday, June 15, 2024</p>
+                      <p className="font-medium">Saturday, October 3, 2026</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <Clock className="w-5 h-5 text-wedding-primary mt-1 flex-shrink-0" />
                     <div>
-                      <p className="font-medium">4:00 PM - 5:00 PM</p>
+                      <p className="font-medium">3:00 PM - 4:00 PM</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <MapPin className="w-5 h-5 text-wedding-primary mt-1 flex-shrink-0" />
                     <div>
-                      <p className="font-medium">The Garden Estate</p>
+                      <p className="font-medium">Sta.Ursula Parish Church</p>
                       <p className="text-sm text-wedding-soft">
-                        123 Celebration Lane
+                        Libid
                         <br />
-                        Beverly Hills, CA 90210
+                        Binangonan, Rizal
                       </p>
                     </div>
                   </div>
                 </div>
                 <div className="mt-6">
                   <a
-                    href="https://maps.google.com"
+                    href="https://maps.app.goo.gl/WhFrsqQRoEfVKkFV6"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block bg-wedding-primary text-white px-6 py-2 rounded-full font-medium text-sm hover:bg-wedding-main transition-colors"
@@ -91,7 +92,7 @@ export default function Eventdetails() {
                   <div className="flex items-start gap-3">
                     <Calendar className="w-5 h-5 text-wedding-primary mt-1 flex-shrink-0" />
                     <div>
-                      <p className="font-medium">Saturday, June 15, 2024</p>
+                      <p className="font-medium">Saturday, October 3, 2026</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
@@ -103,18 +104,20 @@ export default function Eventdetails() {
                   <div className="flex items-start gap-3">
                     <MapPin className="w-5 h-5 text-wedding-primary mt-1 flex-shrink-0" />
                     <div>
-                      <p className="font-medium">The Grand Ballroom</p>
+                      <p className="font-medium">
+                        Villa Alejandra Resort and Events Place
+                      </p>
                       <p className="text-sm text-wedding-soft">
-                        The Garden Estate
+                        Lot 3, Block 4 Roosevelt Montevideo Subd.
                         <br />
-                        123 Celebration Lane, Beverly Hills, CA
+                        Bgy. Mambog Bingonan, Rizal, Cordona
                       </p>
                     </div>
                   </div>
                 </div>
                 <div className="mt-6">
                   <a
-                    href="https://maps.google.com"
+                    href="https://maps.app.goo.gl/aHetKzHUxAGhoq639"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block bg-wedding-primary text-white px-6 py-2 rounded-full font-medium text-sm hover:bg-wedding-main transition-colors"

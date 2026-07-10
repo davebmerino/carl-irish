@@ -9,7 +9,7 @@ export default function Countdown() {
   });
 
   // Wedding date - Update this to your actual wedding date
-  const weddingDate = new Date("2026-10-15T16:00:00");
+  const weddingDate = new Date("2026-10-03T15:00:00");
 
   useEffect(() => {
     const calculateTimeLeft = () => {
