@@ -62,10 +62,30 @@ export default function Ourstory() {
             during the hard days..
           </p>
           <p className="font-manrope text-wedding-main text-lg leading-relaxed">
-            Now, we're thrilled to begin this next chapter of our journey
-            together, and we couldn't imagine celebrating without the people who
-            mean the most to us. Thank you for being part of our story.
+            Then one day, a simple message appeared:{" "}
+            <strong>“Hi Irish.”</strong> <br />
+            It was Carl, trying to reconnect.
+            <br />
+            After just a week of conversations, they started dating—and from
+            that moment on, they never stopped choosing each other. Looking back
+            at their old messages, Irish realized that Carl had always found his
+            way back into her life during the times she needed someone the most.
+            Somehow, no matter how many times life caused their story to pause,
+            they always found themselves starting again.
           </p>
+          <p className="font-manrope text-wedding-main text-lg leading-relaxed">
+            After just a week of conversations, they started dating—and from
+            that moment on, they never stopped choosing each other. Looking back
+            at their old messages, Irish realized that Carl had always found his
+            way back into her life during the times she needed someone the most.
+            Somehow, no matter how many times life caused their story to pause,
+            they always found themselves starting again.
+          </p>
+          And now, they are about to begin their most beautiful chapter yet—
+          <br />
+          not just as two people in love,
+          <br />
+          but as husband and wife.
         </div>
       </div>
     </section>
