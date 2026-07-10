@@ -61,11 +61,13 @@ export default function Ourstory() {
             struggles, and moments when all she wanted was someone to hold onto
             during the hard days..
           </p>
-          <p className="font-manrope text-wedding-main text-lg leading-relaxed">
+          <p className="font-manrope text-wedding-main text-lg leading-relaxed mb-6">
             Then one day, a simple message appeared:{" "}
             <strong>“Hi Irish.”</strong> <br />
             It was Carl, trying to reconnect.
             <br />
+          </p>
+          <p className="font-manrope text-wedding-main text-lg leading-relaxed mb-6">
             After just a week of conversations, they started dating—and from
             that moment on, they never stopped choosing each other. Looking back
             at their old messages, Irish realized that Carl had always found his
@@ -74,18 +76,12 @@ export default function Ourstory() {
             they always found themselves starting again.
           </p>
           <p className="font-manrope text-wedding-main text-lg leading-relaxed">
-            After just a week of conversations, they started dating—and from
-            that moment on, they never stopped choosing each other. Looking back
-            at their old messages, Irish realized that Carl had always found his
-            way back into her life during the times she needed someone the most.
-            Somehow, no matter how many times life caused their story to pause,
-            they always found themselves starting again.
+            And now, they are about to begin their most beautiful chapter yet—
+            <br />
+            not just as two people in love,
+            <br />
+            but as husband and wife.
           </p>
-          And now, they are about to begin their most beautiful chapter yet—
-          <br />
-          not just as two people in love,
-          <br />
-          but as husband and wife.
         </div>
       </div>
     </section>
