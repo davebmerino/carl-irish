@@ -3,7 +3,12 @@ import { useNavigate } from "react-router-dom";
 import Navbar from "../../components/navbar/Navbar.jsx";
 import Footer from "../../components/footer/Footer.jsx";
 
+import axios from "axios";
+
 import { Heart, Plus, Trash2, Loader2 } from "lucide-react";
+
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+const API = `${BACKEND_URL}/api`;
 
 export default function Rsvp() {
   const navigate = useNavigate();
@@ -12,9 +17,9 @@ export default function Rsvp() {
   const [error, setError] = useState("");
 
   const [primaryGuest, setPrimaryGuest] = useState({
-    name: "",
-    email: "",
-    contact: "",
+    name: sessionStorage.getItem("invite_name") || "",
+    email: sessionStorage.getItem("invite_email") || "",
+    contact: sessionStorage.getItem("invite_contact") || "",
     status: "coming",
   });
 
