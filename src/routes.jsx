@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Rsvp from "./pages/rsvp/Rsvp.jsx";
 import Landingpage from "./pages/firstpage/Landingpage.jsx";
 import Home from "./pages/homepage/Home.jsx";
-import AdminLogin from "./pages/admin/adminlogin.jsx";
+import AdminLogin from "./pages/admin/AdminLogin.jsx";
 import AdminDashboard from "./pages/admin/AdminDashboard.jsx";
 import AdminAnalytics from "./pages/admin/AdminAnalytics.jsx";
 
