@@ -1,23 +1,52 @@
 import profileImg from "../../assets/pictures/mainprofile.jpeg";
 
-import { useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import { Heart } from "lucide-react";
+
+import axios from "axios";
+
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+const API = `${BACKEND_URL}/api`;
 
 export default function Landingpage() {
   const navigate = useNavigate();
+  const { id } = useParams();
+  const [guestName, setGuestName] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [notFound, setNotFound] = useState(false);
+
+  useEffect(() => {
+    // Skip fetching for reserved routes
+    const reservedRoutes = ["home", "rsvp", "adminlogin", "admin"];
+    if (id && !reservedRoutes.includes(id)) {
+      setLoading(true);
+      axios
+        .get(`${API}/invites/${id}`)
+        .then((response) => {
+          setGuestName(response.data.name);
+          sessionStorage.setItem("invite_id", id);
+          sessionStorage.setItem("invite_name", response.data.name);
+          if (response.data.email)
+            sessionStorage.setItem("invite_email", response.data.email);
+          if (response.data.contact)
+            sessionStorage.setItem("invite_contact", response.data.contact);
+        })
+        .catch((err) => {
+          console.error("Invite not found:", err);
+          setNotFound(true);
+        })
+        .finally(() => setLoading(false));
+    } else {
+      sessionStorage.removeItem("invite_id");
+      sessionStorage.removeItem("invite_name");
+      sessionStorage.removeItem("invite_email");
+      sessionStorage.removeItem("invite_contact");
+    }
+  }, [id]);
 
   return (
     <div className="relative min-h-screen overflow-hidden">
-      {/* Background Image with Overlay */}
-      {/* <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{
-          backgroundImage: "",
-        }}>
-        <div className="absolute inset-0 bg-wedding-deep/30"></div>
-      </div> */}
-
-      {/* Grain Overlay */}
       <div className="grain-overlay absolute inset-0"></div>
 
       {/* Content */}
@@ -31,11 +60,37 @@ export default function Landingpage() {
           </div>
 
           {/* You Are Invited */}
-          <h1
-            className="font-script text-5xl md:text-7xl text-wedding-deep mb-4 animate-fade-up"
-            data-testid="invitation-title">
-            You Are Invited
-          </h1>
+          {loading ? (
+            <div className="animate-pulse">
+              <div className="h-16 bg-wedding-secondary/50 rounded mb-4"></div>
+            </div>
+          ) : notFound ? (
+            <h1
+              className="font-script text-5xl md:text-7xl text-wedding-deep mb-4 animate-fade-up"
+              data-testid="invitation-title">
+              You Are Invited
+            </h1>
+          ) : guestName ? (
+            <>
+              <p className="font-cormorant text-2xl md:text-3xl text-wedding-main mb-2">
+                Hi
+              </p>
+              <h1
+                className="font-script text-4xl md:text-6xl text-wedding-deep mb-2 animate-fade-up"
+                data-testid="guest-name">
+                {guestName}
+              </h1>
+              <p className="font-cormorant text-xl md:text-2xl text-wedding-main italic">
+                You Are Invited
+              </p>
+            </>
+          ) : (
+            <h1
+              className="font-script text-5xl md:text-7xl text-wedding-deep mb-4 animate-fade-up"
+              data-testid="invitation-title">
+              You Are Invited
+            </h1>
+          )}
 
           {/* Divider */}
           <div className="flex items-center justify-center my-6">
