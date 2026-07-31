@@ -16,20 +16,20 @@ export const router = createBrowserRouter([
     element: <Landingpage />,
   },
   {
-    path: "home",
+    path: "/home",
     element: <Home />,
   },
   {
-    path: "rsvp",
+    path: "/rsvp",
     element: <Rsvp />,
   },
   {
-    path: "adminlogin",
+    path: "/adminlogin",
     element: <AdminLogin />,
   },
   {
-    path: "admin",
+    path: "/admin",
     element: <AdminDashboard />,
   },
-  { path: "admin/analytics", element: <AdminAnalytics /> },
+  { path: "/admin/analytics", element: <AdminAnalytics /> },
 ]);
