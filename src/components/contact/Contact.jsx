@@ -27,9 +27,9 @@ export default function Contact() {
                   Email
                 </h4>
                 <a
-                  href="mailto:wedding@example.com"
+                  href="mailto:wedding@carlroyce&irish.com"
                   className="font-manrope text-wedding-soft hover:text-wedding-primary transition-colors">
-                  wedding@example.com
+                  wedding@carlroyce&irish.com
                 </a>
               </div>
               <div className="text-center">

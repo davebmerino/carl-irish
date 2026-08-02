@@ -1,3 +1,5 @@
+import entourageBanner from "../../assets/pictures/DSC04988.jpeg";
+
 export default function Entourage() {
   const entourageData = {
     parents: {
@@ -90,7 +92,7 @@ export default function Entourage() {
           {/* Photo above section */}
           <div className="relative h-64 mb-12 rounded-xl overflow-hidden shadow-xl">
             <img
-              src="https://images.unsplash.com/photo-1519741497674-611481863552?crop=entropy&cs=srgb&fm=jpg&q=85"
+              src={entourageBanner}
               alt="Entourage"
               className="w-full h-full object-cover"
             />
@@ -279,13 +281,13 @@ export default function Entourage() {
                 </div>
                 <div className="text-center">
                   <h4 className="font-playfair text-xl font-semibold text-wedding-primary mb-3">
-                    Candle
+                    Cord
                   </h4>
                   <p className="font-manrope text-wedding-main">
-                    {entourageData.bridesMaids.candle[0]}
+                    {entourageData.bridesMaids.cord[0]}
                   </p>
                   <p className="font-manrope text-wedding-main">
-                    {entourageData.groomsMen.candle[0]}
+                    {entourageData.groomsMen.cord[0]}
                   </p>
                 </div>
               </div>
