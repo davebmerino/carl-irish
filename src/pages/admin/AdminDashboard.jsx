@@ -513,7 +513,7 @@ const AdminDashboard = () => {
                   <h2 className="font-playfair text-2xl font-semibold text-wedding-deep">
                     Guest Invites
                   </h2>
-                  <div className="flex gap-2 flex-wrap">
+                  <div className="flex flex-col sm:flex-row flex-wrap gap-2 w-full sm:w-auto">
                     <button
                       onClick={exportInvitesToCSV}
                       className="flex items-center gap-2 bg-white border-2 border-wedding-primary text-wedding-primary px-4 py-2 rounded-lg hover:bg-wedding-primary/10 transition-colors font-manrope text-sm"
