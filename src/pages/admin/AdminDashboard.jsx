@@ -513,13 +513,13 @@ const AdminDashboard = () => {
                   <h2 className="font-playfair text-2xl font-semibold text-wedding-deep">
                     Guest Invites
                   </h2>
-                  <div className="flex flex-col sm:flex-row flex-wrap gap-2 w-full sm:w-auto">
+                  <div className="flex flex-col gap-2">
                     <button
                       onClick={exportInvitesToCSV}
                       className="flex items-center gap-2 bg-white border-2 border-wedding-primary text-wedding-primary px-4 py-2 rounded-lg hover:bg-wedding-primary/10 transition-colors font-manrope text-sm"
                       data-testid="export-invites-button">
                       <Download className="w-4 h-4" />
-                      Export
+                      <span className="hidden sm:inline">Export</span>
                     </button>
                     <button
                       onClick={handleSendAll}
@@ -533,7 +533,8 @@ const AdminDashboard = () => {
                         </>
                       ) : (
                         <>
-                          <Send className="w-4 h-4" /> Send to All
+                          <Send className="w-4 h-4" />{" "}
+                          <span className="hidden sm:inline">Send to All</span>
                         </>
                       )}
                     </button>
@@ -547,7 +548,8 @@ const AdminDashboard = () => {
                         </>
                       ) : (
                         <>
-                          <Upload className="w-4 h-4" /> Import CSV
+                          <Upload className="w-4 h-4" />{" "}
+                          <span className="hidden sm:inline">Import CSV</span>
                         </>
                       )}
                       <input
@@ -564,7 +566,7 @@ const AdminDashboard = () => {
                       className="flex items-center gap-2 bg-wedding-primary text-white px-4 py-2 rounded-lg hover:bg-wedding-main transition-colors font-manrope text-sm"
                       data-testid="add-guest-button">
                       <Plus className="w-4 h-4" />
-                      Add Guest
+                      <span className="hidden sm:inline">Add Guest</span>
                     </button>
                   </div>
                 </div>
@@ -771,7 +773,7 @@ const AdminDashboard = () => {
                     className="flex items-center gap-2 bg-wedding-primary text-white px-4 py-2 rounded-lg hover:bg-wedding-main transition-colors font-manrope text-sm"
                     data-testid="export-rsvps-button">
                     <Download className="w-4 h-4" />
-                    Export to CSV
+                    <span className="hidden sm:inline">Export to CSV</span>
                   </button>
                 </div>
                 {rsvps.length === 0 ? (
