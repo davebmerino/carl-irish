@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../../components/navbar/Navbar.jsx";
 import Footer from "../../components/footer/Footer.jsx";
@@ -25,7 +25,43 @@ export default function Rsvp() {
 
   const [additionalGuests, setAdditionalGuests] = useState([]);
 
+  const [maxGuests, setMaxGuests] = useState(1);
+  const [inviteLoaded, setInviteLoaded] = useState(false);
+  const allowedAdditionalGuests = Math.max(maxGuests - 1, 0);
+
+  useEffect(() => {
+    const inviteId = sessionStorage.getItem("invite_id");
+
+    // Prevent opening /rsvp directly
+    if (!inviteId) {
+      navigate("/");
+      return;
+    }
+
+    axios
+      .get(`${API}/invites/${inviteId}`)
+      .then((response) => {
+        setMaxGuests(response.data.number_of_guests || 1);
+        setInviteLoaded(true);
+      })
+      .catch(() => {
+        sessionStorage.clear();
+        navigate("/");
+      });
+  }, [navigate]);
+
   const addGuest = () => {
+    if (additionalGuests.length >= allowedAdditionalGuests) {
+      setError(
+        `This invitation allows a maximum of ${maxGuests} guest${
+          maxGuests > 1 ? "s" : ""
+        }.`,
+      );
+      return;
+    }
+
+    setError("");
+
     setAdditionalGuests([
       ...additionalGuests,
       {
@@ -114,6 +150,13 @@ export default function Rsvp() {
       setLoading(false);
     }
   };
+  if (!inviteLoaded) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        Loading invitation...
+      </div>
+    );
+  }
 
   if (submitted) {
     return (
@@ -403,14 +446,24 @@ export default function Rsvp() {
               </div>
             ))}
 
+            <p className="text-center text-sm text-wedding-main mb-4 font-manrope">
+              This invitation is valid for {maxGuests} guest
+              {maxGuests > 1 ? "s" : ""}.
+            </p>
+
             {/* Add Guest Button */}
             <button
               type="button"
               onClick={addGuest}
-              className="w-full border-2 border-dashed border-wedding-soft hover:border-wedding-main text-wedding-main hover:text-wedding-main py-4 rounded-xl font-medium tracking-wide transition-all duration-300 flex items-center justify-center gap-2 mb-8"
+              disabled={additionalGuests.length >= allowedAdditionalGuests}
+              className="w-full border-2 border-dashed border-wedding-soft hover:border-wedding-main text-wedding-main hover:text-wedding-main py-4 rounded-xl font-medium tracking-wide transition-all duration-300 flex items-center justify-center gap-2 mb-8 disabled:opacity-50 disabled:cursor-not-allowed"
               data-testid="add-guest-button">
               <Plus className="w-5 h-5" />
-              Add Guest
+              {allowedAdditionalGuests === 0
+                ? "No Additional Guests Allowed"
+                : additionalGuests.length >= allowedAdditionalGuests
+                  ? "Guest Limit Reached"
+                  : "Add Guest"}
             </button>
 
             {/* Submit Button */}

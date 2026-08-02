@@ -19,18 +19,31 @@ export default function Landingpage() {
   useEffect(() => {
     // Skip fetching for reserved routes
     const reservedRoutes = ["home", "rsvp", "adminlogin", "admin"];
+
     if (id && !reservedRoutes.includes(id)) {
       setLoading(true);
+
       axios
         .get(`${API}/invites/${id}`)
         .then((response) => {
           setGuestName(response.data.name);
+
           sessionStorage.setItem("invite_id", id);
           sessionStorage.setItem("invite_name", response.data.name);
-          if (response.data.email)
+
+          if (response.data.email) {
             sessionStorage.setItem("invite_email", response.data.email);
-          if (response.data.contact)
+          }
+
+          if (response.data.contact) {
             sessionStorage.setItem("invite_contact", response.data.contact);
+          }
+
+          //  add guest count to session storage, default to 1 if not provided
+          sessionStorage.setItem(
+            "invite_number_of_guests",
+            response.data.number_of_guests || 1,
+          );
         })
         .catch((err) => {
           console.error("Invite not found:", err);
@@ -42,6 +55,7 @@ export default function Landingpage() {
       sessionStorage.removeItem("invite_name");
       sessionStorage.removeItem("invite_email");
       sessionStorage.removeItem("invite_contact");
+      sessionStorage.removeItem("invite_number_of_guests");
     }
   }, [id]);
 
