@@ -124,6 +124,15 @@ export default function Rsvp() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    const emails = [
+      primaryGuest.email.trim().toLowerCase(),
+      ...additionalGuests.map((g) => g.email.trim().toLowerCase()),
+    ];
+
+    if (new Set(emails).size !== emails.length) {
+      setError("Duplicate email addresses are not allowed.");
+      return false;
+    }
 
     if (!validateForm()) {
       return;
@@ -134,6 +143,7 @@ export default function Rsvp() {
 
     try {
       const response = await axios.post(`${API}/rsvp`, {
+        invite_id: sessionStorage.getItem("invite_id"),
         primary_guest: primaryGuest,
         additional_guests: additionalGuests,
       });
