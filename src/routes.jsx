@@ -5,7 +5,7 @@ import Home from "./pages/homepage/Home.jsx";
 import AdminLogin from "./pages/admin/AdminLogin.jsx";
 import AdminDashboard from "./pages/admin/AdminDashboard.jsx";
 import AdminAnalytics from "./pages/admin/AdminAnalytics.jsx";
-import Eventdetails from "./pages/details/Detaisnav.jsx";
+import Eventdetails from "./pages/details/Detailsnav.jsx";
 import OurStory from "./pages/ourstory/OurStory.jsx";
 
 export const router = createBrowserRouter([
