@@ -1,4 +1,4 @@
-// import poster from "../../assets/pictures/DSC04265.jpeg";
+import poster from "../../assets/weddingpictures/DSC04265.jpg";
 
 export default function WeddingFilm() {
   return (
@@ -16,13 +16,15 @@ export default function WeddingFilm() {
 
         {/* Video */}
         <video
+          autoPlay
+          loop
+          playsInline
           controls
-          preload="none"
-          // poster={poster}
-          allow="autoplay"
+          preload="metadata"
+          poster={poster}
           className="w-full rounded-[2rem]">
           <source
-            src="https://www.youtube.com/watch?v=F9gB5b4jgOI&t=1651s"
+            src="https://res.cloudinary.com/oh6rmemk/video/upload/v1786364390/Carlirishforledwall.mp4"
             type="video/mp4"
           />
         </video>
