@@ -5,7 +5,8 @@ import Home from "./pages/homepage/Home.jsx";
 import AdminLogin from "./pages/admin/AdminLogin.jsx";
 import AdminDashboard from "./pages/admin/AdminDashboard.jsx";
 import AdminAnalytics from "./pages/admin/AdminAnalytics.jsx";
-import Eventdetails from "./pages/details/details.jsx";
+import Eventdetails from "./pages/details/Detaisnav.jsx";
+import OurStory from "./pages/ourstory/OurStory.jsx";
 
 export const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ export const router = createBrowserRouter([
   {
     path: "/rsvp",
     element: <Rsvp />,
+  },
+  {
+    path: "/Our-story",
+    element: <OurStory />,
   },
   {
     path: "/adminlogin",

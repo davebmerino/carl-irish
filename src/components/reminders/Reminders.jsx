@@ -29,6 +29,16 @@ export default function Reminders() {
                 capture everything so you can relive the memories with us later!
               </p>
             </div>
+            <div className="bg-white/90 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-wedding-secondary/30">
+              <h3 className="font-cormorant italic text-2xl font-semibold text-wedding-deep mb-4">
+                Gifts
+              </h3>
+              <p className="font-manrope text-wedding-main leading-relaxed">
+                Your precence is already the greatest gift, but if you'd like to
+                give something, cash gift are preferred. This will help us our
+                new journey together in the most meaningful way.
+              </p>
+            </div>
           </div>
         </div>
       </section>

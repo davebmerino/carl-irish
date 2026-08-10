@@ -100,7 +100,7 @@ export default function Eventdetails() {
                   <div className="flex items-start gap-3">
                     <Clock className="w-5 h-5 text-wedding-primary mt-1 flex-shrink-0" />
                     <div>
-                      <p className="font-medium">6:30 PM - 11:00 PM</p>
+                      <p className="font-medium">4:30 PM - 11:00 PM</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
