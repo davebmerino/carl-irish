@@ -1,5 +1,5 @@
 import { Shirt } from "lucide-react";
-import dresscodeImg from "../../assets/pictures/attireguide.png";
+import dresscodeImg from "../../assets/weddingpictures/attireguide.png";
 
 export default function Dresscode() {
   return (

@@ -1,5 +1,5 @@
 import { Calendar, Clock, MapPin, Church, UtensilsCrossed } from "lucide-react";
-import churchImg from "../../assets/pictures/church.jpg";
+import churchImg from "../../assets/weddingpictures/church.jpg";
 
 export default function Eventdetails() {
   return (

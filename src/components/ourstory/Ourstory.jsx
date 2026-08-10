@@ -1,11 +1,11 @@
 import { Heart } from "lucide-react";
-import storyimg from "../../assets/pictures/2374.jpg";
+import storyimg from "../../assets/weddingpictures/2374.jpg";
 
-import image1 from "../../assets/pictures/DSC04741.jpeg";
-import image2 from "../../assets/pictures/DSC04563.jpeg";
-import image3 from "../../assets/pictures/DSC04992.jpeg";
+import image1 from "../../assets/weddingpictures/DSC04741.jpg";
+import image2 from "../../assets/weddingpictures/DSC04563.jpg";
+import image3 from "../../assets/weddingpictures/DSC04992.jpg";
 
-import image4 from "../../assets/pictures/DSC04660.jpeg";
+import image4 from "../../assets/weddingpictures/DSC04660.jpg";
 
 export default function Ourstory() {
   const galleryImages = [image1, image2, image3, image4, ,];

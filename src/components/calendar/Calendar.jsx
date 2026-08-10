@@ -1,4 +1,4 @@
-import banner2 from "../../assets/pictures/banner2.jpeg";
+import banner2 from "../../assets/weddingpictures/banner2.jpg";
 
 export default function Calendar() {
   return (

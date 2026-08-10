@@ -1,4 +1,4 @@
-import rsvp from "../../assets/pictures/rsvp.jpeg";
+import rsvp from "../../assets/weddingpictures/rsvp.jpg";
 import { Link } from "react-router-dom";
 
 export default function Rsvpmodal() {

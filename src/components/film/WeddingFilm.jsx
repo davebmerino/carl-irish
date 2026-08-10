@@ -1,5 +1,4 @@
-import film from "../../assets/video/CarlIrishForLEDWall.mp4";
-import poster from "../../assets/pictures/DSC04265.jpeg";
+// import poster from "../../assets/pictures/DSC04265.jpeg";
 
 export default function WeddingFilm() {
   return (
@@ -19,10 +18,13 @@ export default function WeddingFilm() {
         <video
           controls
           preload="none"
-          poster={poster}
+          // poster={poster}
           allow="autoplay"
           className="w-full rounded-[2rem]">
-          <source src={film} type="video/mp4" />
+          <source
+            src="https://www.youtube.com/watch?v=F9gB5b4jgOI&t=1651s"
+            type="video/mp4"
+          />
         </video>
 
         {/* Caption */}

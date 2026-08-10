@@ -1,4 +1,4 @@
-import banner from "../../assets/pictures/banner.jpeg";
+import banner from "../../assets/weddingpictures/banner.jpeg";
 
 export default function Hero() {
   return (

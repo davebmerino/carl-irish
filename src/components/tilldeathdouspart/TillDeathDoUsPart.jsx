@@ -1,11 +1,11 @@
-import image1 from "../../assets/pictures/DSC04876.jpeg";
-import image2 from "../../assets/pictures/2374.jpg";
-import image3 from "../../assets/pictures/DSC04456.jpeg";
-import image4 from "../../assets/pictures/DSC04468.jpeg";
-import image5 from "../../assets/pictures/2373.jpg";
-import image6 from "../../assets/pictures/DSC04487.jpeg";
+import image1 from "../../assets/weddingpictures/DSC04876.jpg";
+import image2 from "../../assets/weddingpictures/2374.jpg";
+import image3 from "../../assets/weddingpictures/DSC04456.jpg";
+import image4 from "../../assets/weddingpictures/DSC04468.jpg";
+import image5 from "../../assets/weddingpictures/2373.jpg";
+import image6 from "../../assets/weddingpictures/DSC04487.jpg";
 
-import banner2 from "../../assets/pictures/DJI_0783.jpeg";
+import banner2 from "../../assets/weddingpictures/DJI_0783.jpeg";
 
 export default function TillDeathDoUsPart() {
   const galleryImages = [image1, image2, image3, image4, image5, image6];

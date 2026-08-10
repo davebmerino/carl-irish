@@ -1,4 +1,4 @@
-import profileImg from "../../assets/pictures/mainprofile.jpeg";
+import profileImg from "../../assets/weddingpictures/mainprofile.jpg";
 
 import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";

@@ -1,4 +1,4 @@
-import entourageBanner from "../../assets/pictures/DSC04988.jpeg";
+import entourageBanner from "../../assets/weddingpictures/DSC04988.jpg";
 
 export default function Entourage() {
   const entourageData = {
