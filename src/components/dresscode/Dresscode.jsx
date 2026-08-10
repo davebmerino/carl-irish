@@ -9,8 +9,8 @@ export default function Dresscode() {
         className="py-20 px-4 bg-wedding-primary/30"
         data-testid="dress-code-section">
         <div className="max-w-5xl mx-auto text-center">
-          <Shirt className="w-8 h-8 text-wedding-warm mx-auto mb-4" />
-          <h2 className="font-playfair text-4xl md:text-5xl font-semibold text-wedding-deep mb-4">
+          <Shirt className="mx-auto text-[#879a78] mb-4" size={36} />
+          <h2 className="font-script text-5xl md:text-6xl text-wedding-deep text-center mb-12">
             Dress Code
           </h2>
           <p className="max-w-3xl mx-auto font-manrope text-wedding-main text-lg leading-relaxed mb-8">

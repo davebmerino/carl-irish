@@ -29,6 +29,10 @@ export default function Rsvpmodal() {
                 a moment to complete this RSVP form to help us prepare with love
                 and care. We can't wait to share this beautiful day with you.
               </p>
+              <p className="font-manrope text-lg mb-8 max-w-2xl mx-auto">
+                Kindly RSVP by <strong>September 15, 2026.</strong> An accurate
+                headcount is essential for our venue, so a response is required.
+              </p>
               <Link to="/rsvp">
                 <button
                   className="bg-wedding-primary text-white px-10 py-4 rounded-full font-medium text-lg hover:bg-wedding-main transition-colors shadow-lg"

@@ -96,8 +96,11 @@ export default function Entourage() {
               alt="Entourage"
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-wedding-deep/40 flex items-center justify-center">
-              <h2 className="font-script text-5xl md:text-7xl text-white text-shadow">
+            <div className="absolute inset-0 bg-wedding-deep/40 flex flex-col items-center justify-center">
+              <p className="font-script text-center text-white text-lg md:text-2xl lg:text-4xl mb-2">
+                Collado - Maqui
+              </p>
+              <h2 className="font-script text-5xl text-center md:text-7xl text-white text-shadow">
                 Entourage
               </h2>
             </div>
@@ -105,11 +108,13 @@ export default function Entourage() {
 
           <div className="space-y-12">
             {/* Parents */}
-            <div className="bg-white/90 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-wedding-secondary/30">
-              <h3 className="font-cormorant text-3xl text-wedding-deep mb-6 text-center tracking-wider">
+            <div className="bg-wedding-primary/30 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-wedding-secondary/30">
+              {/* <h3 className="font-cormorant text-3xl text-wedding-deep mb-6 text-center tracking-wider">
                 Parents of the Couple
-              </h3>
-              <div className="grid md:grid-cols-2 gap-8">
+              </h3> */}
+
+              {/* Parents of the Couple */}
+              <div className="grid grid-cols gap-8 text-center">
                 <div>
                   <h4 className="font-playfair text-xl font-semibold text-wedding-primary mb-3">
                     Parents of the Groom
@@ -135,17 +140,17 @@ export default function Entourage() {
               </div>
             </div>
 
-            {/* Primary Sponsors */}
-            <div className="bg-white/90 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-wedding-secondary/30">
+            <div className="bg-wedding-primary/30 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-wedding-secondary/30">
+              {/* Primary Sponsors */}
               <h3 className="font-cormorant text-3xl text-wedding-deep mb-6 text-center tracking-wider">
-                Primary Sponsors
+                LIFE GODPARENTS
               </h3>
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid md:grid-cols-2 gap-8 mb-10">
                 <div>
-                  <h4 className="font-playfair text-xl font-semibold text-wedding-primary mb-3">
+                  <h4 className="font-playfair text-xl text-center font-semibold text-wedding-primary mb-3">
                     Ninongs
                   </h4>
-                  <ul className="space-y-2 font-manrope text-wedding-main">
+                  <ul className="space-y-2 font-manrope text-wedding-main text-center">
                     {entourageData.primarySponsors.ninongs.map(
                       (ninong, index) => (
                         <li key={index}>{ninong}</li>
@@ -154,10 +159,10 @@ export default function Entourage() {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-playfair text-xl font-semibold text-wedding-primary mb-3">
+                  <h4 className="font-playfair text-xl text-center font-semibold text-wedding-primary mb-3">
                     Ninangs
                   </h4>
-                  <ul className="space-y-2 font-manrope text-wedding-main">
+                  <ul className="space-y-2 font-manrope text-wedding-main text-center">
                     {entourageData.primarySponsors.ninangs.map(
                       (ninang, index) => (
                         <li key={index}>{ninang}</li>
@@ -166,73 +171,93 @@ export default function Entourage() {
                   </ul>
                 </div>
               </div>
-            </div>
-            {/* Mathron of Honor and Best Man */}
-            <div className="bg-white/90 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-wedding-secondary/30 grid md:grid-cols-2 gap-8">
-              <div className="flex flex-col text-center">
-                <h4 className="font-playfair text-xl font-semibold text-wedding-primary mb-3">
-                  Matron of Honor
-                </h4>
-                <p className="font-manrope text-wedding-main">
-                  {entourageData.mathronOfHonor}
-                </p>
-              </div>
-              <div className="text-center">
-                <h4 className="font-playfair text-xl font-semibold text-wedding-primary mb-3">
-                  Best Man
-                </h4>
-                <p className="font-manrope text-wedding-main">
-                  {entourageData.bestMan}
-                </p>
-              </div>
-            </div>
-            {/* BridesMaid and Groomsmen */}
-            <div className="bg-white/90 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-wedding-secondary/30">
-              <h3 className="font-cormorant text-3xl text-wedding-deep mb-6 text-center tracking-wider"></h3>
-              <div className="grid md:grid-cols-2 gap-8">
-                <div>
+
+              {/* Secondary Sponsors */}
+              <h3 className="font-cormorant text-3xl text-wedding-deep mb-6 text-center tracking-wider">
+                SECONDARY SPONSORS
+              </h3>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-10">
+                <div className="text-center">
                   <h4 className="font-playfair text-xl font-semibold text-wedding-primary mb-3">
+                    TO LIGHT OUR PATH
+                  </h4>
+                  <p className="font-manrope text-wedding-main">
+                    {entourageData.bridesMaids.candle[0]}
+                  </p>
+                  <p className="font-manrope text-wedding-main">
+                    {entourageData.groomsMen.candle[0]}
+                  </p>
+                </div>
+                <div className="text-center">
+                  <h4 className="font-playfair text-xl font-semibold text-wedding-primary mb-3">
+                    TO CLOTHE US AS ONE
+                  </h4>
+                  <p className="font-manrope text-wedding-main">
+                    {entourageData.bridesMaids.veil[0]}
+                  </p>
+                  <p className="font-manrope text-wedding-main">
+                    {entourageData.groomsMen.veil[0]}
+                  </p>
+                </div>
+                <div className="lg:col-span-2 flex flex-col text-center lg:justify-center">
+                  <h4 className="font-playfair text-xl font-semibold text-wedding-primary mb-3">
+                    Cord
+                  </h4>
+                  <p className="font-manrope text-wedding-main">
+                    {entourageData.bridesMaids.cord[0]}
+                  </p>
+                  <p className="font-manrope text-wedding-main">
+                    {entourageData.groomsMen.cord[0]}
+                  </p>
+                </div>
+
+                {/* Mathron of Honor and Best Man */}
+                <div className="flex flex-col text-center">
+                  <h4 className="font-playfair text-xl font-semibold text-wedding-primary mb-3">
+                    Matron of Honor
+                  </h4>
+                  <p className="font-manrope text-wedding-main">
+                    {entourageData.mathronOfHonor}
+                  </p>
+                </div>
+                <div className="text-center">
+                  <h4 className="font-playfair text-xl font-semibold text-wedding-primary mb-3">
+                    Best Man
+                  </h4>
+                  <p className="font-manrope text-wedding-main">
+                    {entourageData.bestMan}
+                  </p>
+                </div>
+              </div>
+
+              {/* BridesMaid and Groomsmen */}
+
+              <h3 className="font-cormorant text-3xl text-wedding-deep mb-6 text-center tracking-wider"></h3>
+              <div className="grid md:grid-cols-2 gap-8 mb-10">
+                <div>
+                  <h4 className="font-playfair text-xl text-center font-semibold text-wedding-primary mb-3">
                     Bridesmaids
                   </h4>
-                  <ul className="space-y-2 font-manrope text-wedding-main">
+                  <ul className="space-y-2 font-manrope text-wedding-main text-center">
                     {entourageData.bridesMaids.reg.map((bridesMaid, index) => (
                       <li key={index}>{bridesMaid}</li>
                     ))}
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-playfair text-xl font-semibold text-wedding-primary mb-3">
+                  <h4 className="font-playfair text-xl text-center font-semibold text-wedding-primary mb-3">
                     Groomsmen
                   </h4>
-                  <ul className="space-y-2 font-manrope text-wedding-main">
+                  <ul className="space-y-2 font-manrope text-wedding-main text-center">
                     {entourageData.groomsMen.reg.map((groomsmen, index) => (
                       <li key={index}>{groomsmen}</li>
                     ))}
                   </ul>
                 </div>
               </div>
-            </div>
-            {/* Flower Girls */}
-            <div className="bg-white/90 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-wedding-secondary/30">
-              <h3 className="font-cormorant text-3xl text-wedding-deep mb-6 text-center tracking-wider">
-                Flower Girls
-              </h3>
-              <div className="grid md:grid-cols-2 gap-8">
-                {entourageData.flowerGirls.map((flowerGirl, index) => (
-                  <div key={index} className="text-center">
-                    <p className="font-manrope text-wedding-main">
-                      {flowerGirl}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
-            {/* Bearer */}
-            <div className="bg-white/90 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-wedding-secondary/30">
-              <h3 className="font-cormorant text-3xl text-wedding-deep mb-6 text-center tracking-wider">
-                Special Roles
-              </h3>
-              <div className="grid md:grid-cols-3 gap-8">
+              {/* Bearer */}
+
+              <div className="grid md:grid-cols-3 gap-8 text-center mb-10 py-4">
                 <div className="text-center">
                   <h4 className="font-playfair text-xl font-semibold text-wedding-primary mb-3">
                     Ring Bearer
@@ -257,39 +282,21 @@ export default function Entourage() {
                     {entourageData.bearer.bibble[0]}
                   </p>
                 </div>
-                <div className="text-center">
-                  <h4 className="font-playfair text-xl font-semibold text-wedding-primary mb-3">
-                    Candle
-                  </h4>
-                  <p className="font-manrope text-wedding-main">
-                    {entourageData.bridesMaids.candle[0]}
-                  </p>
-                  <p className="font-manrope text-wedding-main">
-                    {entourageData.groomsMen.candle[0]}
-                  </p>
-                </div>
-                <div className="text-center">
-                  <h4 className="font-playfair text-xl font-semibold text-wedding-primary mb-3">
-                    Veil
-                  </h4>
-                  <p className="font-manrope text-wedding-main">
-                    {entourageData.bridesMaids.veil[0]}
-                  </p>
-                  <p className="font-manrope text-wedding-main">
-                    {entourageData.groomsMen.veil[0]}
-                  </p>
-                </div>
-                <div className="text-center">
-                  <h4 className="font-playfair text-xl font-semibold text-wedding-primary mb-3">
-                    Cord
-                  </h4>
-                  <p className="font-manrope text-wedding-main">
-                    {entourageData.bridesMaids.cord[0]}
-                  </p>
-                  <p className="font-manrope text-wedding-main">
-                    {entourageData.groomsMen.cord[0]}
-                  </p>
-                </div>
+              </div>
+
+              {/* Flower Girls */}
+
+              <h3 className="font-cormorant text-3xl text-wedding-deep mb-6 text-center tracking-wider">
+                Flower Girls
+              </h3>
+              <div className="grid md:grid-cols-1 gap-4 text-center">
+                {entourageData.flowerGirls.map((flowerGirl, index) => (
+                  <div key={index} className="text-center">
+                    <p className="font-manrope text-wedding-main">
+                      {flowerGirl}
+                    </p>
+                  </div>
+                ))}
               </div>
             </div>
           </div>

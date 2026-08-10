@@ -14,6 +14,9 @@ import Countdown from "../../components/countdown/Countdown.jsx";
 import Calendar from "../../components/calendar/Calendar.jsx";
 import Rsvpmodal from "../../components/modal/Rsvpmodal.jsx";
 import Entourage from "../../components/entourage/Entourage.jsx";
+import WeddingFilm from "../../components/film/WeddingFilm.jsx";
+
+import FadeInSection from "../../components/common/FadeInSection.jsx";
 
 export default function Home() {
   return (
@@ -22,19 +25,50 @@ export default function Home() {
         <Navbar />
         <div className="grain-overlay fixed inset-0 pointer-events-none"></div>
         <Hero />
-        <Countdown />
-        <Calendar />
-        <Eventdetails />
-        <Schedule />
-        <Dresscode />
-        <Entourage />
-        <TillDeathDoUsPart />
-        <Reminders />
+        {/* Build excitement */}
+        <FadeInSection>
+          <Countdown />
+        </FadeInSection>
+        <FadeInSection>
+          <WeddingFilm />
+        </FadeInSection>
+
+        {/* The couple */}
+        <FadeInSection>
+          <Ourstory />
+        </FadeInSection>
+        <FadeInSection>
+          <Gallery />
+        </FadeInSection>
+        <FadeInSection>
+          <Calendar />
+        </FadeInSection>
+        <FadeInSection>
+          <Eventdetails />
+        </FadeInSection>
+        <FadeInSection>
+          <Dresscode />
+        </FadeInSection>
+        <FadeInSection>
+          <Schedule />
+        </FadeInSection>
+        <FadeInSection>
+          <Entourage />
+        </FadeInSection>
+        <FadeInSection>
+          <Reminders />
+        </FadeInSection>
+        <FadeInSection>
+          <TillDeathDoUsPart />
+        </FadeInSection>
+        <FadeInSection>
+          <Contact />
+        </FadeInSection>
+
+        {/* Keep the modal mounted globally */}
         <Rsvpmodal />
-        <Ourstory />
-        <Gallery />
-        <Contact />
       </div>
+
       <Footer />
     </>
   );

@@ -29,7 +29,7 @@ export default function Contact() {
                 <a
                   href="mailto:wedding@carlroyce&irish.com"
                   className="font-manrope text-wedding-soft hover:text-wedding-primary transition-colors">
-                  wedding@carlroyce&irish.com
+                  irishmaqui@gmail.com
                 </a>
               </div>
               <div className="text-center">
@@ -42,7 +42,7 @@ export default function Contact() {
                 <a
                   href="tel:+11234567890"
                   className="font-manrope text-wedding-soft hover:text-wedding-primary transition-colors">
-                  +1 (123) 456-7890
+                  09177092223
                 </a>
               </div>
             </div>

@@ -38,6 +38,7 @@ export default function Ourstory() {
         {/* Photo above story */}
         <div className="relative h-96 mb-8 rounded-xl overflow-hidden shadow-xl">
           <img
+            loading="lazy"
             src={image4}
             alt="Couple"
             className="w-full h-full object-cover"

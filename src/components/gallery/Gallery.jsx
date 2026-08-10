@@ -73,6 +73,7 @@ export default function Gallery() {
                 className="aspect-square overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-shadow group"
                 data-testid={`gallery-image-${index}`}>
                 <img
+                  loading="lazy"
                   src={image}
                   alt={`Gallery ${index + 1}`}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"

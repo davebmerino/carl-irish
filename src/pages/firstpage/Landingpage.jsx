@@ -160,6 +160,12 @@ export default function Landingpage() {
               More Details
             </button>
           </div>
+          <p className="  text-wedding-deep text-sm p-4 mt-6">
+            <span className="text-red-600 text-md font-medium">Note: </span>We
+            can’t wait to celebrate with you! To preserve the privacy of our
+            special day, please keep our wedding website link private and do not
+            share it.
+          </p>
         </div>
       </div>
     </div>
