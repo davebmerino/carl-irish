@@ -1,6 +1,7 @@
 import Entourage from "../../components/entourage/Entourage.jsx";
 import WeddingTimeline from "../../components/schedule/Schedule.jsx";
 import Navbar from "../../components/navbar/Navbar.jsx";
+import Footer from "../../components/footer/Footer.jsx";
 
 export default function Details() {
   return (
@@ -11,6 +12,7 @@ export default function Details() {
         <WeddingTimeline />
         <Entourage />
       </div>
+      <Footer />
     </>
   );
 }
