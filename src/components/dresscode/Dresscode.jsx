@@ -20,6 +20,7 @@ export default function Dresscode() {
           </p>
           <div className="relative w-full h-[680px] rounded-xl overflow-hidden shadow-xl">
             <img
+              loading="lazy"
               src={dresscodeImg}
               alt="Dress Code"
               className="absolute inset-0 w-full h-full object-cover"

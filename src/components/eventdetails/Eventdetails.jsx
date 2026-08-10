@@ -22,6 +22,7 @@ export default function Eventdetails() {
             <div className="bg-white/90 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg border border-wedding-secondary/30">
               <div className="h-48 overflow-hidden">
                 <img
+                  loading="lazy"
                   src={churchImg}
                   alt="Church"
                   className="w-full h-full object-cover"
@@ -76,6 +77,7 @@ export default function Eventdetails() {
             <div className="bg-white/90 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg border border-wedding-secondary/30">
               <div className="h-48 overflow-hidden">
                 <img
+                  loading="lazy"
                   src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?crop=entropy&cs=srgb&fm=jpg&q=85"
                   alt="Reception"
                   className="w-full h-full object-cover"

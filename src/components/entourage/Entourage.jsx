@@ -19,6 +19,7 @@ export default function Entourage() {
         "Mr. Robert Morado",
         "Mr. Roldan Valdez",
         "Mr. Bernie Comia",
+        "Mr. Richard Collado",
       ],
       ninangs: [
         "Mrs. Chona Collado",
@@ -92,6 +93,7 @@ export default function Entourage() {
           {/* Photo above section */}
           <div className="relative h-64 mb-12 rounded-xl overflow-hidden shadow-xl">
             <img
+              loading="lazy"
               src={entourageBanner}
               alt="Entourage"
               className="w-full h-full object-cover"
@@ -212,20 +214,20 @@ export default function Entourage() {
                 </div>
 
                 {/* Mathron of Honor and Best Man */}
-                <div className="flex flex-col text-center">
-                  <h4 className="font-cormorant italic text-2xl font-semibold text-wedding-primary mb-3">
-                    Matron of Honor
-                  </h4>
-                  <p className="font-manrope text-wedding-main">
-                    {entourageData.mathronOfHonor}
-                  </p>
-                </div>
                 <div className="text-center">
                   <h4 className="font-cormorant italic text-2xl font-semibold text-wedding-primary mb-3">
                     Best Man
                   </h4>
                   <p className="font-manrope text-wedding-main">
                     {entourageData.bestMan}
+                  </p>
+                </div>
+                <div className="flex flex-col text-center">
+                  <h4 className="font-cormorant italic text-2xl font-semibold text-wedding-primary mb-3">
+                    Matron of Honor
+                  </h4>
+                  <p className="font-manrope text-wedding-main">
+                    {entourageData.mathronOfHonor}
                   </p>
                 </div>
               </div>
@@ -235,21 +237,21 @@ export default function Entourage() {
               <div className="grid md:grid-cols-2 gap-8 mb-10">
                 <div>
                   <h4 className="font-cormorant italic text-2xl text-center font-semibold text-wedding-primary mb-3">
-                    Bridesmaids
-                  </h4>
-                  <ul className="space-y-2 font-manrope text-wedding-main text-center">
-                    {entourageData.bridesMaids.reg.map((bridesMaid, index) => (
-                      <li key={index}>{bridesMaid}</li>
-                    ))}
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="font-cormorant italic text-2xl text-center font-semibold text-wedding-primary mb-3">
                     Groomsmen
                   </h4>
                   <ul className="space-y-2 font-manrope text-wedding-main text-center">
                     {entourageData.groomsMen.reg.map((groomsmen, index) => (
                       <li key={index}>{groomsmen}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-cormorant italic text-2xl text-center font-semibold text-wedding-primary mb-3">
+                    Bridesmaids
+                  </h4>
+                  <ul className="space-y-2 font-manrope text-wedding-main text-center">
+                    {entourageData.bridesMaids.reg.map((bridesMaid, index) => (
+                      <li key={index}>{bridesMaid}</li>
                     ))}
                   </ul>
                 </div>

@@ -77,6 +77,7 @@ export default function Calendar() {
             </div>
             <div className="relative h-[400px] rounded-xl overflow-hidden shadow-xl">
               <img
+                loading="lazy"
                 src={banner2}
                 alt="Couple"
                 className="w-full h-full object-cover"

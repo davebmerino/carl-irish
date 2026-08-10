@@ -49,6 +49,7 @@ export default function Landingpage() {
           console.error("Invite not found:", err);
           setNotFound(true);
         })
+
         .finally(() => setLoading(false));
     } else {
       sessionStorage.removeItem("invite_id");
@@ -90,7 +91,7 @@ export default function Landingpage() {
                 Hi
               </p>
               <h1
-                className="font-script text-4xl md:text-6xl text-wedding-deep mb-2 animate-fade-up"
+                className="font-cormorant italic text-2xl md:text-3xl text-wedding-deep mb-2 animate-fade-up"
                 data-testid="guest-name">
                 {guestName}
               </h1>

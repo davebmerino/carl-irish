@@ -12,6 +12,7 @@ export default function Rsvpmodal() {
           <div className="relative rounded-xl overflow-hidden shadow-2xl">
             <div className="absolute inset-0">
               <img
+                loading="lazy"
                 src={rsvp}
                 alt="RSVP"
                 className="w-full h-full object-cover"

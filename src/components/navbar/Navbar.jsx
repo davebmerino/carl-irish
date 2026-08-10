@@ -7,8 +7,8 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { path: "/", label: "Home" },
-    { path: "/home", label: "Details" },
+    { path: "/home", label: "Home" },
+    { path: "/details", label: "Details" },
     { path: "/rsvp", label: "RSVP" },
   ];
   return (
