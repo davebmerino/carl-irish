@@ -8,7 +8,7 @@ export default function Contact() {
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
             <Mail className="w-8 h-8 text-wedding-primary mx-auto mb-4" />
-            <h2 className="font-cormorant text-4xl md:text-5xl font-light text-wedding-deep mb-4 tracking-wider">
+            <h2 className="font-script text-4xl md:text-5xl font-light text-wedding-deep mb-4 tracking-wider">
               Contact Us
             </h2>
             <div className="h-px w-24 bg-wedding-primary mx-auto"></div>
@@ -16,7 +16,8 @@ export default function Contact() {
 
           <div className="bg-white/90 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-wedding-secondary/30">
             <p className="font-manrope text-wedding-main text-center mb-8">
-              Have questions? We'd love to hear from you!
+              Have questions? We'd love to hear from you! feel free to message
+              us.
             </p>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="text-center">

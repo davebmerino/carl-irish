@@ -97,7 +97,7 @@ export default function Entourage() {
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-wedding-deep/40 flex flex-col items-center justify-center">
-              <p className="font-script text-center text-white text-lg md:text-2xl lg:text-4xl mb-2">
+              <p className="font-cormorant italic text-center text-white text-lg md:text-2xl lg:text-4xl mb-2">
                 Collado - Maqui
               </p>
               <h2 className="font-script text-5xl text-center md:text-7xl text-white text-shadow">
@@ -116,25 +116,25 @@ export default function Entourage() {
               {/* Parents of the Couple */}
               <div className="grid grid-cols gap-8 text-center">
                 <div>
-                  <h4 className="font-playfair text-xl font-semibold text-wedding-primary mb-3">
+                  <h4 className="font-cormorant italic text-2xl font-semibold text-wedding-primary mb-3">
                     Parents of the Groom
                   </h4>
                   <p className="font-manrope text-wedding-main">
-                    Mr.Carmelito Cunanan Collado
+                    Mr. Carmelito Cunanan Collado
                   </p>
                   <p className="font-manrope text-wedding-main">
-                    Mrs.Editha Antazo Rivera
+                    Mrs. Editha Antazo Rivera
                   </p>
                 </div>
                 <div className="">
-                  <h4 className="font-playfair text-xl font-semibold text-wedding-primary mb-3 ">
+                  <h4 className="font-cormorant italic text-2xl font-semibold text-wedding-primary mb-3 ">
                     Parents of the Bride
                   </h4>
                   <p className="font-manrope text-wedding-main">
-                    Mr.Alan Hernaez Maqui
+                    Mr. Alan Hernaez Maqui
                   </p>
                   <p className="font-manrope text-wedding-main">
-                    Mrs.Lailani Añonuevo De la Peña
+                    Mrs. Lailani Añonuevo De la Peña
                   </p>
                 </div>
               </div>
@@ -142,12 +142,12 @@ export default function Entourage() {
 
             <div className="bg-wedding-primary/30 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-wedding-secondary/30">
               {/* Primary Sponsors */}
-              <h3 className="font-cormorant text-3xl text-wedding-deep mb-6 text-center tracking-wider">
+              <h3 className="font-cormorant italic text-3xl text-wedding-deep mb-6 text-center tracking-wider">
                 LIFE GODPARENTS
               </h3>
               <div className="grid md:grid-cols-2 gap-8 mb-10">
                 <div>
-                  <h4 className="font-playfair text-xl text-center font-semibold text-wedding-primary mb-3">
+                  <h4 className="font-cormorant italic text-xl text-center font-semibold text-wedding-primary mb-3">
                     Ninongs
                   </h4>
                   <ul className="space-y-2 font-manrope text-wedding-main text-center">
@@ -159,7 +159,7 @@ export default function Entourage() {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-playfair text-xl text-center font-semibold text-wedding-primary mb-3">
+                  <h4 className="font-cormorant italic text-xl text-center font-semibold text-wedding-primary mb-3">
                     Ninangs
                   </h4>
                   <ul className="space-y-2 font-manrope text-wedding-main text-center">
@@ -173,12 +173,12 @@ export default function Entourage() {
               </div>
 
               {/* Secondary Sponsors */}
-              <h3 className="font-cormorant text-3xl text-wedding-deep mb-6 text-center tracking-wider">
+              <h3 className="font-cormorant italic text-3xl text-wedding-deep mb-6 text-center tracking-wider">
                 SECONDARY SPONSORS
               </h3>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-10">
                 <div className="text-center">
-                  <h4 className="font-playfair text-xl font-semibold text-wedding-primary mb-3">
+                  <h4 className="font-cormorant italic text-xl font-semibold text-wedding-primary mb-3">
                     TO LIGHT OUR PATH
                   </h4>
                   <p className="font-manrope text-wedding-main">
@@ -189,7 +189,7 @@ export default function Entourage() {
                   </p>
                 </div>
                 <div className="text-center">
-                  <h4 className="font-playfair text-xl font-semibold text-wedding-primary mb-3">
+                  <h4 className="font-cormorant italic text-xl font-semibold text-wedding-primary mb-3">
                     TO CLOTHE US AS ONE
                   </h4>
                   <p className="font-manrope text-wedding-main">
@@ -200,7 +200,7 @@ export default function Entourage() {
                   </p>
                 </div>
                 <div className="lg:col-span-2 flex flex-col text-center lg:justify-center">
-                  <h4 className="font-playfair text-xl font-semibold text-wedding-primary mb-3">
+                  <h4 className="font-cormorant italic text-xl font-semibold text-wedding-primary mb-3">
                     Cord
                   </h4>
                   <p className="font-manrope text-wedding-main">
@@ -213,7 +213,7 @@ export default function Entourage() {
 
                 {/* Mathron of Honor and Best Man */}
                 <div className="flex flex-col text-center">
-                  <h4 className="font-playfair text-xl font-semibold text-wedding-primary mb-3">
+                  <h4 className="font-cormorant italic text-2xl font-semibold text-wedding-primary mb-3">
                     Matron of Honor
                   </h4>
                   <p className="font-manrope text-wedding-main">
@@ -221,7 +221,7 @@ export default function Entourage() {
                   </p>
                 </div>
                 <div className="text-center">
-                  <h4 className="font-playfair text-xl font-semibold text-wedding-primary mb-3">
+                  <h4 className="font-cormorant italic text-2xl font-semibold text-wedding-primary mb-3">
                     Best Man
                   </h4>
                   <p className="font-manrope text-wedding-main">
@@ -232,10 +232,9 @@ export default function Entourage() {
 
               {/* BridesMaid and Groomsmen */}
 
-              <h3 className="font-cormorant text-3xl text-wedding-deep mb-6 text-center tracking-wider"></h3>
               <div className="grid md:grid-cols-2 gap-8 mb-10">
                 <div>
-                  <h4 className="font-playfair text-xl text-center font-semibold text-wedding-primary mb-3">
+                  <h4 className="font-cormorant italic text-2xl text-center font-semibold text-wedding-primary mb-3">
                     Bridesmaids
                   </h4>
                   <ul className="space-y-2 font-manrope text-wedding-main text-center">
@@ -245,7 +244,7 @@ export default function Entourage() {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-playfair text-xl text-center font-semibold text-wedding-primary mb-3">
+                  <h4 className="font-cormorant italic text-2xl text-center font-semibold text-wedding-primary mb-3">
                     Groomsmen
                   </h4>
                   <ul className="space-y-2 font-manrope text-wedding-main text-center">
@@ -259,7 +258,7 @@ export default function Entourage() {
 
               <div className="grid md:grid-cols-3 gap-8 text-center mb-10 py-4">
                 <div className="text-center">
-                  <h4 className="font-playfair text-xl font-semibold text-wedding-primary mb-3">
+                  <h4 className="font-cormorant italic text-2xl font-semibold text-wedding-primary mb-3">
                     Ring Bearer
                   </h4>
                   <p className="font-manrope text-wedding-main">
@@ -267,7 +266,7 @@ export default function Entourage() {
                   </p>
                 </div>
                 <div className="text-center">
-                  <h4 className="font-playfair text-xl font-semibold text-wedding-primary mb-3">
+                  <h4 className="font-cormorant italic text-2xl font-semibold text-wedding-primary mb-3">
                     Coin Bearer
                   </h4>
                   <p className="font-manrope text-wedding-main">
@@ -275,7 +274,7 @@ export default function Entourage() {
                   </p>
                 </div>
                 <div className="text-center">
-                  <h4 className="font-playfair text-xl font-semibold text-wedding-primary mb-3">
+                  <h4 className="font-cormorant italic text-2xl font-semibold text-wedding-primary mb-3">
                     Bibble Bearer
                   </h4>
                   <p className="font-manrope text-wedding-main">
@@ -286,7 +285,7 @@ export default function Entourage() {
 
               {/* Flower Girls */}
 
-              <h3 className="font-cormorant text-3xl text-wedding-deep mb-6 text-center tracking-wider">
+              <h3 className="font-cormorant italic text-3xl text-wedding-deep mb-6 text-center tracking-wider">
                 Flower Girls
               </h3>
               <div className="grid md:grid-cols-1 gap-4 text-center">

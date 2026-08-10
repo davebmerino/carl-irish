@@ -46,10 +46,10 @@ export default function Footer() {
             </div>
 
             {/* Copyright */}
-            <p className="font-manrope text-wedding-secondary text-sm">
+            <p className="font-cormorant italic text-wedding-secondary text-sm">
               © 2026 Carl & Irish. All rights reserved.
             </p>
-            <p className="font-manrope text-wedding-secondary text-sm mt-2">
+            <p className="font-cormorant italic text-wedding-secondary text-sm mt-2">
               Made with{" "}
               <Heart className="inline w-4 h-4 text-wedding-warm fill-wedding-primary" />{" "}
               for our special day

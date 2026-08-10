@@ -60,7 +60,7 @@ export default function Gallery() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <Heart className="w-8 h-8 text-wedding-primary fill-wedding-primary mx-auto mb-4" />
-            <h2 className="font-cormorant text-4xl md:text-5xl font-light text-wedding-deep mb-4 tracking-wider">
+            <h2 className="font-cormorant italic text-4xl md:text-5xl font-light text-wedding-deep mb-4 tracking-wider">
               Our Gallery
             </h2>
             <div className="h-px w-24 bg-wedding-primary mx-auto"></div>

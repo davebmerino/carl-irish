@@ -20,18 +20,23 @@ export default function Rsvpmodal() {
             </div>
             <div className="relative z-10 text-center py-20 px-4 text-white">
               <h2 className="font-script text-5xl md:text-7xl mb-6">R.S.V.P</h2>
-              <p className="font-cormorant text-xl md:text-2xl mb-2 italic">
-                répondez s'il vous plaît
+              <p className="font-cormorant italic text-xl md:text-2xl mb-2 ">
+                We can’t wait to celebrate with you! To preserve the privacy of
+                our special day, <br />
+                please keep our wedding website link private and do not share
+                it.
               </p>
-              <p className="font-manrope text-lg mb-8 max-w-2xl mx-auto">
-                As we start this new chapter together, it would mean so much to
-                celebrate it with the people dearest to our hearts. Kindly take
-                a moment to complete this RSVP form to help us prepare with love
-                and care. We can't wait to share this beautiful day with you.
+
+              <p className="font-cormorant text-xl md:text-2xl  max-w-2xl mx-auto">
+                Kindly RSVP by{" "}
+                <strong className="text-white">September 15, 2026.</strong> An
+                accurate headcount is essential for our venue, so a response is
+                required.
               </p>
-              <p className="font-manrope text-lg mb-8 max-w-2xl mx-auto">
-                Kindly RSVP by <strong>September 15, 2026.</strong> An accurate
-                headcount is essential for our venue, so a response is required.
+              <p className="font-cormorant italic text-md md:text-lg text-wedding-secondary mb-8">
+                Thank you for your understanding and cooperation, we are
+                grateful for your presence as we celebrate this precious
+                occassion.
               </p>
               <Link to="/rsvp">
                 <button

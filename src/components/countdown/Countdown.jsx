@@ -37,7 +37,7 @@ export default function Countdown() {
         className="py-16 px-4 bg-wedding-bg/50"
         data-testid="countdown-section">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-cormorant text-3xl md:text-4xl font-light text-wedding-deep mb-12 tracking-widest uppercase">
+          <h2 className="font-cormorant italic text-3xl md:text-4xl font-light text-wedding-deep mb-12 tracking-widest uppercase">
             Days Before We Say "I Do"
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">

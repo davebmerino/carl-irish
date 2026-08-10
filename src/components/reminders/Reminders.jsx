@@ -9,7 +9,7 @@ export default function Reminders() {
           </h2>
           <div className="space-y-6">
             <div className="bg-white/90 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-wedding-secondary/30">
-              <h3 className="font-playfair text-2xl font-semibold text-wedding-deep mb-4">
+              <h3 className="font-cormorant italic text-2xl font-semibold text-wedding-deep mb-4">
                 Children
               </h3>
               <p className="font-manrope text-wedding-main leading-relaxed">
@@ -19,7 +19,7 @@ export default function Reminders() {
               </p>
             </div>
             <div className="bg-white/90 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-wedding-secondary/30">
-              <h3 className="font-playfair text-2xl font-semibold text-wedding-deep mb-4">
+              <h3 className="font-cormorant italic text-2xl font-semibold text-wedding-deep mb-4">
                 Unplugged Ceremony
               </h3>
               <p className="font-manrope text-wedding-main leading-relaxed">

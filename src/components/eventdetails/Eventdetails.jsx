@@ -11,7 +11,7 @@ export default function Eventdetails() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <MapPin className="w-8 h-8 text-wedding-primary mx-auto mb-4" />
-            <h2 className="font-cormorant text-4xl md:text-5xl font-light text-wedding-deep mb-4 tracking-wider">
+            <h2 className="font-cormorant italic text-4xl md:text-5xl font-light text-wedding-deep mb-4 tracking-wider">
               Ceremony & Reception
             </h2>
             <div className="h-px w-24 bg-wedding-primary mx-auto"></div>
@@ -30,7 +30,7 @@ export default function Eventdetails() {
               <div className="p-8">
                 <div className="flex items-center gap-3 mb-4">
                   <Church className="w-6 h-6 text-wedding-primary" />
-                  <h3 className="font-playfair text-2xl font-semibold text-wedding-deep">
+                  <h3 className="font-script text-4xl font-semibold text-wedding-deep">
                     Ceremony
                   </h3>
                 </div>
@@ -84,7 +84,7 @@ export default function Eventdetails() {
               <div className="p-8">
                 <div className="flex items-center gap-3 mb-4">
                   <UtensilsCrossed className="w-6 h-6 text-wedding-primary" />
-                  <h3 className="font-playfair text-2xl font-semibold text-wedding-deep">
+                  <h3 className="font-script text-4xl font-semibold text-wedding-deep">
                     Reception
                   </h3>
                 </div>

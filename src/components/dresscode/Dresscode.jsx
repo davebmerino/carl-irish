@@ -13,7 +13,7 @@ export default function Dresscode() {
           <h2 className="font-script text-5xl md:text-6xl text-wedding-deep text-center mb-12">
             Dress Code
           </h2>
-          <p className="max-w-3xl mx-auto font-manrope text-wedding-main text-lg leading-relaxed mb-8">
+          <p className="font-cormorant italic max-w-xl mx-auto  text-wedding-main text-2xl leading-relaxed mb-8">
             We kindly invite you to wear formal attire in the colors shown in
             our wedding palette. <strong>Please avoid wearing white</strong>, as
             this color is reserved for the bride.

@@ -27,6 +27,7 @@ export default function Ourstory() {
               key={index}
               className="aspect-square overflow-hidden rounded-xl shadow-lg transform hover:scale-105 transition-transform">
               <img
+                loading="lazy"
                 src={image}
                 alt={`Story ${index + 1}`}
                 className="w-full h-full object-cover"

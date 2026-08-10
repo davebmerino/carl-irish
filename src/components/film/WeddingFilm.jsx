@@ -3,7 +3,7 @@ import poster from "../../assets/weddingpictures/DSC04265.jpg";
 export default function WeddingFilm() {
   return (
     <section className="bg-[#f5f4f1] py-24 px-6">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
           <div className="w-24 h-px bg-[#b6c3a8] mx-auto mt-6" />

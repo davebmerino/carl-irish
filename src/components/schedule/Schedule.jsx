@@ -102,9 +102,7 @@ export default function WeddingTimeline() {
                           <p className="text-[#6f7f62] text-lg font-semibold tracking-[0.18em] uppercase">
                             {item.time}
                           </p>
-                          <h3
-                            className="text-4xl text-[#5f6f54] leading-tight mt-1"
-                            style={{ fontFamily: "Cormorant Garamond, serif" }}>
+                          <h3 className="text-comorant text-3xl text-[#5f6f54] leading-tight mt-1">
                             {item.title}
                           </h3>
                         </div>
@@ -133,9 +131,7 @@ export default function WeddingTimeline() {
                           <p className="text-[#6f7f62] text-lg font-semibold tracking-[0.18em] uppercase">
                             {item.time}
                           </p>
-                          <h3
-                            className="text-4xl text-[#5f6f54] leading-tight mt-1"
-                            style={{ fontFamily: "Cormorant Garamond, serif" }}>
+                          <h3 className="text-comorant text-3xl text-[#5f6f54] leading-tight mt-1">
                             {item.title}
                           </h3>
                         </div>

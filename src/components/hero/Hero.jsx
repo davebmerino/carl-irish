@@ -40,7 +40,7 @@ export default function Hero() {
             data-testid="home-title">
             Carl Royce & Irish
           </h1>
-          <p className="font-cormorant text-xl md:text-2xl tracking-widest uppercase">
+          <p className="font-cormorant italic text-2xl md:text-4xl tracking-widest uppercase">
             Are Getting Married
           </p>
         </div>
