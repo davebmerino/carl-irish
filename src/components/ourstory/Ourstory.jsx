@@ -1,6 +1,8 @@
 import { Heart } from "lucide-react";
 import storyimg from "../../assets/weddingpictures/2374.jpg";
 
+import { motion } from "framer-motion";
+
 import image1 from "../../assets/weddingpictures/DSC04741.jpg";
 import image2 from "../../assets/weddingpictures/DSC04563.jpg";
 import image3 from "../../assets/weddingpictures/DSC04992.jpg";
@@ -14,9 +16,13 @@ export default function Ourstory() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <Heart className="w-8 h-8 text-wedding-primary fill-wedding-primary mx-auto mb-4" />
-          <h2 className="font-cormorant italic text-4xl md:text-5xl font-light text-wedding-deep mb-4 tracking-wider">
+          <motion.h2
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeInOut", delay: 0.22 }}
+            className="font-cormorant italic text-4xl md:text-5xl font-light text-wedding-deep mb-4 tracking-wider">
             Our Story
-          </h2>
+          </motion.h2>
           <div className="h-px w-24 bg-wedding-primary mx-auto"></div>
         </div>
 

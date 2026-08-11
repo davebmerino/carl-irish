@@ -6,6 +6,7 @@ import image5 from "../../assets/weddingpictures/2373.jpg";
 import image6 from "../../assets/weddingpictures/DSC04487.jpg";
 
 import banner2 from "../../assets/weddingpictures/DJI_0783.jpeg";
+import { motion } from "framer-motion";
 
 export default function TillDeathDoUsPart() {
   const galleryImages = [image1, image2, image3, image4, image5, image6];
@@ -15,9 +16,13 @@ export default function TillDeathDoUsPart() {
         className="py-20 px-4 bg-wedding-bg/30"
         data-testid="collage-section">
         <div className="max-w-6xl mx-auto grid grid-rows-1 gap-4 ">
-          <h2 className="font-script text-5xl md:text-7xl text-wedding-deep text-center mb-12">
+          <motion.h2
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeInOut", delay: 0.22 }}
+            className="font-script text-5xl md:text-7xl text-wedding-deep text-center mb-12">
             Till Death Do Us Part
-          </h2>
+          </motion.h2>
           <div className="relative h-96 mb-8 rounded-xl overflow-hidden shadow-xl">
             <img
               loading="lazy"

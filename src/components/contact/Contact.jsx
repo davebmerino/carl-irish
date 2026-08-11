@@ -1,4 +1,5 @@
 import { Mail, Phone } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function Contact() {
   return (
@@ -8,10 +9,18 @@ export default function Contact() {
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
             <Mail className="w-8 h-8 text-wedding-primary mx-auto mb-4" />
-            <h2 className="font-script text-4xl md:text-5xl font-light text-wedding-deep mb-4 tracking-wider">
+            <motion.h2
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, ease: "easeInOut", delay: 0.22 }}
+              className="font-script text-4xl md:text-5xl font-light text-wedding-deep mb-4 tracking-wider">
               Contact Us
-            </h2>
-            <div className="h-px w-24 bg-wedding-primary mx-auto"></div>
+            </motion.h2>
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, ease: "easeInOut", delay: 0.2 }}
+              className="h-px w-24 bg-wedding-primary mx-auto"></motion.div>
           </div>
 
           <div className="bg-white/90 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-wedding-secondary/30">

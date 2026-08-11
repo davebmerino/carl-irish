@@ -1,4 +1,5 @@
 import entourageBanner from "../../assets/weddingpictures/DSC04988.jpg";
+import { motion } from "framer-motion";
 
 export default function Entourage() {
   const entourageData = {
@@ -99,12 +100,20 @@ export default function Entourage() {
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-wedding-deep/40 flex flex-col items-center justify-center">
-              <p className="font-cormorant italic text-center text-white text-lg md:text-2xl lg:text-4xl mb-2">
+              <motion.p
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, ease: "easeInOut", delay: 0.22 }}
+                className="font-cormorant italic text-center text-white text-lg md:text-2xl lg:text-4xl mb-2">
                 Collado - Maqui
-              </p>
-              <h2 className="font-script text-5xl text-center md:text-7xl text-white text-shadow">
+              </motion.p>
+              <motion.h2
+                initial={{ opacity: 0, x: 50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1, ease: "easeInOut", delay: 0.22 }}
+                className="font-script text-5xl text-center md:text-7xl text-white text-shadow">
                 Entourage
-              </h2>
+              </motion.h2>
             </div>
           </div>
 
@@ -116,7 +125,11 @@ export default function Entourage() {
               </h3> */}
 
               {/* Parents of the Couple */}
-              <div className="grid grid-cols gap-8 text-center">
+              <motion.div
+                initial={{ opacity: 0, x: 50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1, ease: "easeInOut", delay: 0.22 }}
+                className="grid grid-cols gap-8 text-center">
                 <div>
                   <h4 className="font-cormorant italic text-2xl font-semibold text-wedding-primary mb-3">
                     Parents of the Groom
@@ -139,10 +152,14 @@ export default function Entourage() {
                     Mrs. Lailani Añonuevo De la Peña
                   </p>
                 </div>
-              </div>
+              </motion.div>
             </div>
 
-            <div className="bg-wedding-primary/30 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-wedding-secondary/30">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, ease: "easeInOut", delay: 0.22 }}
+              className="bg-wedding-primary/30 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-wedding-secondary/30">
               {/* Primary Sponsors */}
               <h3 className="font-cormorant italic text-3xl text-wedding-deep mb-6 text-center tracking-wider">
                 LIFE GODPARENTS
@@ -299,7 +316,7 @@ export default function Entourage() {
                   </div>
                 ))}
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>

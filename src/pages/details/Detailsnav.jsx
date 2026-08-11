@@ -4,6 +4,7 @@ import Navbar from "../../components/navbar/Navbar.jsx";
 import Footer from "../../components/footer/Footer.jsx";
 import Eventdetails from "../../components/eventdetails/Eventdetails.jsx";
 import Dresscode from "../../components/dresscode/Dresscode.jsx";
+import FadeInSection from "../../components/common/FadeInSection.jsx";
 
 export default function Details() {
   return (
@@ -11,10 +12,18 @@ export default function Details() {
       <div className="min-h-screen">
         <Navbar />
         <div className="grain-overlay fixed inset-0 pointer-events-none"></div>
-        <Entourage />
-        <Eventdetails />
-        <WeddingTimeline />
-        <Dresscode />
+        <FadeInSection>
+          <Entourage />
+        </FadeInSection>
+        <FadeInSection>
+          <Eventdetails />
+        </FadeInSection>
+        <FadeInSection>
+          <WeddingTimeline />
+        </FadeInSection>
+        <FadeInSection>
+          <Dresscode />
+        </FadeInSection>
       </div>
       <Footer />
     </>

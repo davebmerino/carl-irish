@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import poster from "../../assets/weddingpictures/DSC04265.jpg";
 
 export default function WeddingFilm() {
@@ -8,14 +9,21 @@ export default function WeddingFilm() {
         <div className="text-center mb-12">
           <div className="w-24 h-px bg-[#b6c3a8] mx-auto mt-6" />
 
-          <p className="text-[#7b8770] mt-6 max-w-2xl mx-auto text-lg leading-relaxed">
+          <motion.p
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeInOut", delay: 0.22 }}
+            className="text-[#7b8770] mt-6 max-w-2xl mx-auto text-lg leading-relaxed">
             A glimpse into the moments, laughter, and love we shared on our
             special day.
-          </p>
+          </motion.p>
         </div>
 
         {/* Video */}
-        <video
+        <motion.video
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1, ease: "easeInOut", delay: 0.22 }}
           autoPlay
           loop
           playsInline
@@ -27,7 +35,7 @@ export default function WeddingFilm() {
             src="https://res.cloudinary.com/oh6rmemk/video/upload/v1786364390/Carlirishforledwall.mp4"
             type="video/mp4"
           />
-        </video>
+        </motion.video>
 
         {/* Caption */}
         <p

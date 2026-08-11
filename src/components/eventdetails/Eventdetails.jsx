@@ -1,5 +1,6 @@
 import { Calendar, Clock, MapPin, Church, UtensilsCrossed } from "lucide-react";
 import churchImg from "../../assets/weddingpictures/church.jpg";
+import { motion } from "framer-motion";
 
 export default function Eventdetails() {
   return (
@@ -11,15 +12,23 @@ export default function Eventdetails() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <MapPin className="w-8 h-8 text-wedding-primary mx-auto mb-4" />
-            <h2 className="font-cormorant italic text-4xl md:text-5xl font-light text-wedding-deep mb-4 tracking-wider">
+            <motion.h2
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, ease: "easeInOut", delay: 0.22 }}
+              className="font-cormorant italic text-4xl md:text-5xl font-light text-wedding-deep mb-4 tracking-wider">
               Ceremony & Reception
-            </h2>
+            </motion.h2>
             <div className="h-px w-24 bg-wedding-primary mx-auto"></div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
             {/* Ceremony */}
-            <div className="bg-white/90 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg border border-wedding-secondary/30">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, ease: "easeInOut", delay: 0.22 }}
+              className="bg-white/90 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg border border-wedding-secondary/30">
               <div className="h-48 overflow-hidden">
                 <img
                   loading="lazy"
@@ -71,10 +80,14 @@ export default function Eventdetails() {
                   </a>
                 </div>
               </div>
-            </div>
+            </motion.div>
 
             {/* Reception */}
-            <div className="bg-white/90 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg border border-wedding-secondary/30">
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, ease: "easeInOut", delay: 0.22 }}
+              className="bg-white/90 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg border border-wedding-secondary/30">
               <div className="h-48 overflow-hidden">
                 <img
                   loading="lazy"
@@ -128,7 +141,7 @@ export default function Eventdetails() {
                   </a>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>

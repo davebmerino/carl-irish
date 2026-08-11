@@ -1,11 +1,15 @@
 import rsvp from "../../assets/weddingpictures/rsvp.jpg";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 export default function Rsvpmodal() {
   return (
     <>
       {/* RSVP Section with Photo */}
-      <section
+      <motion.section
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: "easeInOut", delay: 0.22 }}
         className="py-20 px-4 bg-wedding-bg/30"
         data-testid="rsvp-cta-section">
         <div className="max-w-6xl mx-auto">
@@ -20,7 +24,13 @@ export default function Rsvpmodal() {
               <div className="absolute inset-0 bg-wedding-deep/60"></div>
             </div>
             <div className="relative z-10 text-center py-20 px-4 text-white">
-              <h2 className="font-script text-5xl md:text-7xl mb-6">R.S.V.P</h2>
+              <motion.h2
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, ease: "easeInOut", delay: 0.22 }}
+                className="font-script text-5xl md:text-7xl mb-6">
+                R.S.V.P
+              </motion.h2>
               <p className="font-cormorant italic text-xl md:text-2xl mb-2 ">
                 We can’t wait to celebrate with you! To preserve the privacy of
                 our special day, <br />
@@ -49,7 +59,7 @@ export default function Rsvpmodal() {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 }

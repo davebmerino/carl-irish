@@ -1,5 +1,6 @@
 import { Shirt } from "lucide-react";
 import dresscodeImg from "../../assets/weddingpictures/attireguide.png";
+import { motion } from "framer-motion";
 
 export default function Dresscode() {
   return (
@@ -10,9 +11,13 @@ export default function Dresscode() {
         data-testid="dress-code-section">
         <div className="max-w-5xl mx-auto text-center">
           <Shirt className="mx-auto text-[#879a78] mb-4" size={36} />
-          <h2 className="font-script text-5xl md:text-6xl text-wedding-deep text-center mb-12">
+          <motion.h2
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, ease: "easeInOut", delay: 0.22 }}
+            className="font-script text-5xl md:text-6xl text-wedding-deep text-center mb-12">
             Dress Code
-          </h2>
+          </motion.h2>
           <p className="font-cormorant italic max-w-xl mx-auto  text-wedding-main text-2xl leading-relaxed mb-8">
             We kindly invite you to wear formal attire in the colors shown in
             our wedding palette. <strong>Please avoid wearing white</strong>, as

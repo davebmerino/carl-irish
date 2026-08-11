@@ -1,4 +1,5 @@
 import banner2 from "../../assets/weddingpictures/banner2.jpg";
+import { motion } from "framer-motion";
 
 export default function Calendar() {
   return (
@@ -7,7 +8,11 @@ export default function Calendar() {
       <section className="py-16 px-4" data-testid="calendar-section">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="bg-white/90 backdrop-blur-sm p-8 rounded-xl shadow-lg border border-wedding-secondary/30">
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, ease: "easeInOut", delay: 0.2 }}
+              className="bg-white/90 backdrop-blur-sm p-8 rounded-xl shadow-lg border border-wedding-secondary/30">
               <h3 className="font-script text-4xl text-wedding-deep mb-2 text-center">
                 Save the Date
               </h3>
@@ -74,15 +79,19 @@ export default function Calendar() {
                   </div>
                 ))}
               </div>
-            </div>
-            <div className="relative h-[400px] rounded-xl overflow-hidden shadow-xl">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: -50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, ease: "easeInOut", delay: 0.2 }}
+              className="relative h-[400px] rounded-xl overflow-hidden shadow-xl">
               <img
                 loading="lazy"
                 src={banner2}
                 alt="Couple"
                 className="w-full h-full object-cover"
               />
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>

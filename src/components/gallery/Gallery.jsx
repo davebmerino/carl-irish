@@ -1,4 +1,6 @@
 import { Heart } from "lucide-react";
+import { motion } from "framer-motion";
+
 import image1 from "../../assets/weddingpictures/DJI_0783.jpeg";
 import image2 from "../../assets/weddingpictures/DSC04876.jpg";
 import image3 from "../../assets/weddingpictures/DSC04265.jpg";
@@ -60,13 +62,21 @@ export default function Gallery() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <Heart className="w-8 h-8 text-wedding-primary fill-wedding-primary mx-auto mb-4" />
-            <h2 className="font-cormorant italic text-4xl md:text-5xl font-light text-wedding-deep mb-4 tracking-wider">
+            <motion.h2
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, ease: "easeInOut", delay: 0.22 }}
+              className="font-cormorant italic text-4xl md:text-5xl font-light text-wedding-deep mb-4 tracking-wider">
               Our Gallery
-            </h2>
+            </motion.h2>
             <div className="h-px w-24 bg-wedding-primary mx-auto"></div>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeInOut", delay: 0.22 }}
+            className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {galleryImages.map((image, index) => (
               <div
                 key={index}
@@ -80,7 +90,7 @@ export default function Gallery() {
                 />
               </div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </section>
     </>
