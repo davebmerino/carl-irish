@@ -12,18 +12,14 @@ export default function Details() {
       <div className="min-h-screen">
         <Navbar />
         <div className="grain-overlay fixed inset-0 pointer-events-none"></div>
-        <FadeInSection>
-          <Entourage />
-        </FadeInSection>
-        <FadeInSection>
-          <Eventdetails />
-        </FadeInSection>
-        <FadeInSection>
-          <WeddingTimeline />
-        </FadeInSection>
-        <FadeInSection>
-          <Dresscode />
-        </FadeInSection>
+
+        <Entourage />
+
+        <Eventdetails />
+
+        <WeddingTimeline />
+
+        <Dresscode />
       </div>
       <Footer />
     </>

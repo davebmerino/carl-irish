@@ -1,13 +1,17 @@
 import { Heart } from "lucide-react";
-import storyimg from "../../assets/weddingpictures/2374.jpg";
 
 import { motion } from "framer-motion";
 
-import image1 from "../../assets/weddingpictures/DSC04741.jpg";
-import image2 from "../../assets/weddingpictures/DSC04563.jpg";
-import image3 from "../../assets/weddingpictures/DSC04992.jpg";
+const image1 =
+  "https://yswauwnj4vavq7b5.public.blob.vercel-storage.com/DSC04741.jpg";
 
-import image4 from "../../assets/weddingpictures/DSC04660.jpg";
+const image2 =
+  "https://yswauwnj4vavq7b5.public.blob.vercel-storage.com/DSC04563.jpeg";
+const image3 =
+  "https://yswauwnj4vavq7b5.public.blob.vercel-storage.com/DSC04992.jpg";
+
+const image4 =
+  "https://yswauwnj4vavq7b5.public.blob.vercel-storage.com/DSC04660.jpg";
 
 export default function Ourstory() {
   const galleryImages = [image1, image2, image3, image4, ,];
@@ -17,9 +21,10 @@ export default function Ourstory() {
         <div className="text-center mb-12">
           <Heart className="w-8 h-8 text-wedding-primary fill-wedding-primary mx-auto mb-4" />
           <motion.h2
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, ease: "easeInOut", delay: 0.22 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.7 }}
             className="font-cormorant italic text-4xl md:text-5xl font-light text-wedding-deep mb-4 tracking-wider">
             Our Story
           </motion.h2>

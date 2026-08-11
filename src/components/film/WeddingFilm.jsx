@@ -20,22 +20,19 @@ export default function WeddingFilm() {
         </div>
 
         {/* Video */}
-        <motion.video
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, ease: "easeInOut", delay: 0.22 }}
+        <video
           autoPlay
           loop
           playsInline
           controls
-          preload="metadata"
+          preload="none"
           poster={poster}
           className="w-full rounded-[2rem]">
           <source
             src="https://res.cloudinary.com/oh6rmemk/video/upload/v1786364390/Carlirishforledwall.mp4"
             type="video/mp4"
           />
-        </motion.video>
+        </video>
 
         {/* Caption */}
         <p
