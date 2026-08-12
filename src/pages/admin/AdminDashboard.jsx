@@ -180,10 +180,15 @@ const AdminDashboard = () => {
 
     setSendingEmailId(inviteId);
     try {
+      const token = localStorage.getItem("access_token");
       await axios.post(
         `${API}/admin/invites/${inviteId}/send-email`,
         { frontend_url: window.location.origin },
-        authHeader,
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        },
       );
       alert(`Invitation sent successfully to ${guestEmail}!`);
     } catch (err) {

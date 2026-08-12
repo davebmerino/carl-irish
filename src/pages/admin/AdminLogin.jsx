@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Heart, Lock, User, Loader2 } from "lucide-react";
 import axios from "axios";
 
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:8001";
 const API = `${BACKEND_URL}/api`;
 
 const AdminLogin = () => {
@@ -24,8 +24,7 @@ const AdminLogin = () => {
         password,
       });
 
-      localStorage.setItem("admin_token", response.data.access_token);
-      navigate("/admin");
+      localStorage.setItem("access_token", response.data.access_token);
     } catch (err) {
       setError(err.response?.data?.detail || "Login failed. Please try again.");
     } finally {
