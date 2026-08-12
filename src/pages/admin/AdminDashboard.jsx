@@ -44,7 +44,7 @@ const AdminDashboard = () => {
     notes: "",
   });
 
-  const token = localStorage.getItem("admin_token");
+  const token = localStorage.getItem("access_token");
   const authHeader = { headers: { Authorization: `Bearer ${token}` } };
 
   useEffect(() => {
@@ -67,7 +67,7 @@ const AdminDashboard = () => {
       setRsvps(rsvpsRes.data);
     } catch (err) {
       if (err.response?.status === 401) {
-        localStorage.removeItem("admin_token");
+        localStorage.removeItem("access_token");
         navigate("/adminlogin");
       }
       console.error("Error fetching data:", err);
@@ -77,7 +77,7 @@ const AdminDashboard = () => {
   };
 
   const handleLogout = () => {
-    localStorage.removeItem("admin_token");
+    localStorage.removeItem("access_token");
     navigate("/adminlogin");
   };
 

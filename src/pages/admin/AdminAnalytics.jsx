@@ -39,7 +39,7 @@ const AdminAnalytics = () => {
   const [dateTo, setDateTo] = useState("");
   const [datePreset, setDatePreset] = useState("all");
 
-  const token = localStorage.getItem("admin_token");
+  const token = localStorage.getItem("access_token");
   const authHeader = { headers: { Authorization: `Bearer ${token}` } };
 
   useEffect(() => {
@@ -63,7 +63,7 @@ const AdminAnalytics = () => {
       setRsvps(rsvpsRes.data);
     } catch (err) {
       if (err.response?.status === 401) {
-        localStorage.removeItem("admin_token");
+        localStorage.removeItem("access_token");
         navigate("/adminlogin");
       }
     } finally {
@@ -72,7 +72,7 @@ const AdminAnalytics = () => {
   };
 
   const handleLogout = () => {
-    localStorage.removeItem("admin_token");
+    localStorage.removeItem("access_token");
     navigate("/adminlogin");
   };
 

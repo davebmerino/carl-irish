@@ -3,8 +3,9 @@ import { useNavigate } from "react-router-dom";
 import { Heart, Lock, User, Loader2 } from "lucide-react";
 import axios from "axios";
 
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:8001";
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
+console.log(API);
 
 const AdminLogin = () => {
   const navigate = useNavigate();
@@ -18,17 +19,36 @@ const AdminLogin = () => {
     setLoading(true);
     setError("");
 
+    // try {
+    //   const response = await axios.post(`${API}/admin/login`, {
+    //     username,
+    //     password,
+    //   });
+
+    //   localStorage.setItem("access_token", response.data.access_token);
+    // } catch (err) {
+    //   setError(err.response?.data?.detail || "Login failed. Please try again.");
+    // } finally {
+    //   setLoading(false);
+    // }
+
     try {
       const response = await axios.post(`${API}/admin/login`, {
         username,
         password,
       });
 
+      // Save JWT
       localStorage.setItem("access_token", response.data.access_token);
+
+      // console.log("Saved token:", localStorage.getItem("access_token"));
+
+      // Go to admin dashboard
+      // console.log("Navigating to /admin");
+      navigate("/admin");
     } catch (err) {
-      setError(err.response?.data?.detail || "Login failed. Please try again.");
-    } finally {
-      setLoading(false);
+      console.error(err);
+      alert(err.response?.data?.detail || "Login failed");
     }
   };
 
