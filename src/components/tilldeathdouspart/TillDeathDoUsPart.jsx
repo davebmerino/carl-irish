@@ -35,7 +35,7 @@ export default function TillDeathDoUsPart() {
             {galleryImages.slice(0, 6).map((image, index) => (
               <div
                 key={index}
-                className="aspect-square overflow-hidden rounded-xl shadow-lg">
+                className="aspect-square overflow-hidden rounded-xl shadow-lg transform hover:scale-105 transition-transform">
                 <img
                   src={image}
                   alt={`Collage ${index + 1}`}
