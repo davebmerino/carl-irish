@@ -43,16 +43,7 @@ const entourageData = {
     candle: ["Christer Ramos"],
     cord: ["Ace Aclan"],
   },
-  flowerGirls: [
-    "Asherah Grace Merino",
-    "Mary Roxanne Junsay",
-    "Maria Romaigne Junsay",
-    "Zabrina Urriza",
-    "Helene Bamba",
-    "Lordaine Maryx Figuracion",
-    "Macy Kielle Iguiban",
-    "Vallexia Suyat",
-  ],
+
   bearer: {
     ring: ["Irving James Olinares"],
     coin: ["Kendall Allen Olinares"],
@@ -99,10 +90,6 @@ export default function Entourage() {
           <div className="space-y-12">
             {/* Parents */}
             <div className="bg-wedding-primary/30 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-wedding-secondary/30">
-              {/* <h3 className="font-cormorant text-3xl text-wedding-deep mb-6 text-center tracking-wider">
-                Parents of the Couple
-              </h3> */}
-
               {/* Parents of the Couple */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -145,26 +132,21 @@ export default function Entourage() {
               <h3 className="font-cormorant italic text-3xl text-wedding-deep mb-6 text-center tracking-wider">
                 LIFE GODPARENTS
               </h3>
-              <GodParents primarySponsors={entourageData.primarySponsors} />
-
+              <GodParents />
               {/* Secondary Sponsors */}
               <h3 className="font-cormorant italic text-3xl text-wedding-deep mb-6 text-center tracking-wider">
                 SECONDARY SPONSORS
               </h3>
-              <SecondarySponsors entourageData={entourageData} />
+              <SecondarySponsors />
               {/* BridesMaid and Groomsmen */}
-
-              <BrideGroom entourageData={entourageData} />
+              <BrideGroom />
               {/* Bearer */}
-
-              <Bearer entourageData={entourageData} />
-
+              <Bearer />
               {/* Flower Girls */}
-
               <h3 className="font-cormorant italic text-3xl text-wedding-deep mb-6 text-center tracking-wider">
                 Flower Girls
               </h3>
-              <FlowerGirls entourageData={entourageData} />
+              <FlowerGirls />
             </motion.div>
           </div>
         </div>

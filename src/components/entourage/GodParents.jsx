@@ -1,37 +1,4 @@
-import { memo } from "react";
-
-const primarySponsors = {
-  ninongs: [
-    "Mr. Julius O. Muñoz",
-    "Mr. Ferdinand Quirante",
-    "Mr. Edilberto Flores",
-    "Mr. Richard Collado",
-    "Mr. John Lynch",
-    "Mr. Crisaldo Cervo",
-    "Mr. Julito Hinay",
-    "Mr. Leonardo Dela Cruz",
-    "Mr. Robert Morado",
-    "Mr. Roldan Valdez",
-    "Mr. Bernie Comia",
-    "Mr. Richard Collado",
-  ],
-  ninangs: [
-    "Mrs. Chona Collado",
-    "Mrs. Emillete Quirante",
-    "Mrs. Bonita Flores",
-    "Mrs. Diana Mae Padcayan",
-    "Mrs. Helen Hernaez",
-    "Mrs. Alejandra Cervo",
-    "Mrs. Ma Luz Cosio",
-    "Mrs. Reggie Milca",
-    "Mrs. Maryniza Saclolo",
-    "Mrs. Lagrimas Valdez",
-    "Mrs. Marife Bryan",
-    "Mrs. Grhema Pascua",
-  ],
-};
-
-const GodParents = memo(function GodParents() {
+const GodParents = function () {
   return (
     <div className="grid md:grid-cols-2 gap-8 mb-10">
       <div>
@@ -40,9 +7,18 @@ const GodParents = memo(function GodParents() {
         </h4>
 
         <ul className="space-y-2 font-manrope text-wedding-main text-center">
-          {primarySponsors.ninongs.map((ninong, index) => (
-            <li key={index}>{ninong}</li>
-          ))}
+          <li>Mr. Julius O. Muñoz</li>
+          <li>Mr. Ferdinand Quirante</li>
+          <li>Mr. Edilberto Flores</li>
+          <li>Mr. Richard Collado</li>
+          <li>Mr. John Lynch</li>
+          <li>Mr. Crisaldo Cervo</li>
+          <li>Mr. Julito Hinay</li>
+          <li>Mr. Leonardo Dela Cruz</li>
+          <li>Mr. Robert Morado</li>
+          <li>Mr. Roldan Valdez</li>
+          <li>Mr. Bernie Comia</li>
+          <li>Mr. Richard Collado</li>
         </ul>
       </div>
 
@@ -52,13 +28,22 @@ const GodParents = memo(function GodParents() {
         </h4>
 
         <ul className="space-y-2 font-manrope text-wedding-main text-center">
-          {primarySponsors.ninangs.map((ninang, index) => (
-            <li key={index}>{ninang}</li>
-          ))}
+          <li>Mrs. Chona Dela Cruz</li>
+          <li>Mrs. Emillete Quirante</li>
+          <li>Mrs. Bonita Flores</li>
+          <li>Mrs. Diana Mae Padcayan</li>
+          <li>Mrs. Helen Hernaez</li>
+          <li>Mrs. Alejandra Cervo</li>
+          <li>Mrs. Ma Luz Cosio</li>
+          <li>Mrs. Reggie Milca</li>
+          <li>Mrs. Maryniza Saclolo</li>
+          <li>Mrs. Lagrimas Valdez</li>
+          <li>Mrs. Marife Bryan</li>
+          <li>Mrs. Grhema Pascua</li>
         </ul>
       </div>
     </div>
   );
-});
+};
 
 export default GodParents;

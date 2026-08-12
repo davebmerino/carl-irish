@@ -52,9 +52,9 @@ export default function Home() {
         <FadeInSection>
           <Schedule />
         </FadeInSection>
-        <FadeInSection>
-          <Entourage />
-        </FadeInSection>
+
+        <Entourage />
+
         <FadeInSection>
           <Reminders />
         </FadeInSection>
