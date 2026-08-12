@@ -10,45 +10,6 @@ const entourageData = {
     groom: ["Mr.Carmelito Cunanan Collado", "Mrs.Editha Antazo Rivera"],
     bride: ["Mr.Alan Hernaez Maqui", "Mrs.Lailani Añonuevo De la Peña"],
   },
-
-  mathronOfHonor: ["Ms. Alyssa Remieleen Maqui"],
-  bestMan: ["Mr. Jonas Gervacio"],
-  bridesMaids: {
-    reg: [
-      "Maureen A. Ebrada",
-      "Charlene Collado",
-      "Ms. Lianne Maqui",
-      "Jovelle Ann Rañin",
-      "Mischelle Pereda",
-      "Vina Mae Bolado",
-      "Ina Marie Maqui",
-      "Charmaigne Collado",
-      "Allanie Maqui",
-    ],
-    veil: ["Ms. Lianne Maqui"],
-    candle: ["Maureen A. Ebrada"],
-    cord: ["Charlene Collado"],
-  },
-  groomsMen: {
-    reg: [
-      "Christer Ramos ",
-      "Dave Merino",
-      "Ace Aclan",
-      "Michael Fernandez",
-      "Marlo Maligaya",
-      "Jovic Barandino ",
-      "Dave Edem",
-    ],
-    veil: ["Dave Merino"],
-    candle: ["Christer Ramos"],
-    cord: ["Ace Aclan"],
-  },
-
-  bearer: {
-    ring: ["Irving James Olinares"],
-    coin: ["Kendall Allen Olinares"],
-    bibble: ["Kalen Juan Rolle"],
-  },
 };
 
 export default function Entourage() {
@@ -122,12 +83,7 @@ export default function Entourage() {
               </motion.div>
             </div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: 0.7 }}
-              className="bg-wedding-primary/30 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-wedding-secondary/30">
+            <div className="bg-wedding-primary/30 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-wedding-secondary/30">
               {/* Primary Sponsors */}
               <h3 className="font-cormorant italic text-3xl text-wedding-deep mb-6 text-center tracking-wider">
                 LIFE GODPARENTS
@@ -147,7 +103,7 @@ export default function Entourage() {
                 Flower Girls
               </h3>
               <FlowerGirls />
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
