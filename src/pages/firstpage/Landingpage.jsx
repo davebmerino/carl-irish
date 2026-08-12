@@ -149,13 +149,13 @@ export default function Landingpage() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
-              onClick={() => navigate("/rsvp")}
+              onClick={() => navigate(`/${id}/rsvp`)}
               className="btn-primary bg-wedding-primary text-white px-8 py-3 rounded-full font-medium tracking-wide shadow-md hover:bg-wedding-main"
               data-testid="rsvp-button">
               RSVP
             </button>
             <button
-              onClick={() => navigate("/home")}
+              onClick={() => navigate(`/${id}/home`)}
               className="border-2 border-wedding-deep text-wedding-deep px-8 py-3 rounded-full font-medium tracking-wide hover:bg-wedding-deep hover:text-white transition-all duration-300"
               data-testid="more-details-button">
               More Details

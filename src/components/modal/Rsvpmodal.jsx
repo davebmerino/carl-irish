@@ -49,7 +49,7 @@ export default function Rsvpmodal() {
                 grateful for your presence as we celebrate this precious
                 occassion.
               </p>
-              <Link to="/rsvp">
+              <Link to="/:id/rsvp">
                 <button
                   className="bg-wedding-primary text-white px-10 py-4 rounded-full font-medium text-lg hover:bg-wedding-main transition-colors shadow-lg"
                   data-testid="rsvp-cta-button">

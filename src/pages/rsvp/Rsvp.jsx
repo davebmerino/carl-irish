@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import Navbar from "../../components/navbar/Navbar.jsx";
 import Footer from "../../components/footer/Footer.jsx";
 
@@ -12,6 +12,8 @@ const API = `${BACKEND_URL}/api`;
 
 export default function Rsvp() {
   const navigate = useNavigate();
+  const { id } = useParams();
+
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState("");
@@ -30,17 +32,30 @@ export default function Rsvp() {
   const allowedAdditionalGuests = Math.max(maxGuests - 1, 0);
 
   useEffect(() => {
-    const inviteId = sessionStorage.getItem("invite_id");
-
-    // Prevent opening /rsvp directly
-    if (!inviteId) {
+    if (!id) {
       navigate("/");
       return;
     }
 
     axios
-      .get(`${API}/invites/${inviteId}`)
+      .get(`${API}/invites/${id}`)
       .then((response) => {
+        sessionStorage.setItem("invite_id", id);
+        sessionStorage.setItem("invite_name", response.data.name || "");
+        sessionStorage.setItem("invite_email", response.data.email || "");
+        sessionStorage.setItem("invite_contact", response.data.contact || "");
+        sessionStorage.setItem(
+          "invite_number_of_guests",
+          response.data.number_of_guests || 1,
+        );
+
+        setPrimaryGuest({
+          name: response.data.name || "",
+          email: response.data.email || "",
+          contact: response.data.contact || "",
+          status: "coming",
+        });
+
         setMaxGuests(response.data.number_of_guests || 1);
         setInviteLoaded(true);
       })
@@ -48,7 +63,7 @@ export default function Rsvp() {
         sessionStorage.clear();
         navigate("/");
       });
-  }, [navigate]);
+  }, [id, navigate]);
 
   const addGuest = () => {
     if (additionalGuests.length >= allowedAdditionalGuests) {
@@ -143,7 +158,7 @@ export default function Rsvp() {
 
     try {
       const response = await axios.post(`${API}/rsvp`, {
-        invite_id: sessionStorage.getItem("invite_id"),
+        invite_id: id,
         primary_guest: primaryGuest,
         additional_guests: additionalGuests,
       });
@@ -184,7 +199,7 @@ export default function Rsvp() {
             Your RSVP has been received. We can't wait to celebrate with you!
           </p>
           <button
-            onClick={() => navigate("/home")}
+            onClick={() => navigate(`/${id}/home`)}
             className="bg-wedding-primary text-white px-8 py-3 rounded-full font-medium tracking-wide hover:bg-wedding-warm/90 transition-colors"
             data-testid="back-home-button">
             Back to Home

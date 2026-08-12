@@ -1,15 +1,19 @@
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 import { Heart, Menu, X } from "lucide-react";
 
 export default function Navbar() {
   const location = useLocation();
+  const { id } = useParams();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  // Keep the invitation ID across all pages
+  const base = id ? `/${id}` : "";
+
   const navLinks = [
-    { path: "/home", label: "Home" },
-    { path: "/details", label: "Details" },
-    { path: "/Our-story", label: "Our Story" },
+    { path: `${base}/home`, label: "Home" },
+    { path: `${base}/details`, label: "Details" },
+    { path: `${base}/Our-story`, label: "Our Story" },
   ];
   return (
     <nav
@@ -19,7 +23,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link
-            to="/"
+            to={id ? `/${id}` : "/"}
             className="flex items-center gap-2"
             data-testid="nav-logo">
             <Heart className="w-6 h-6 text-wedding-primary fill-wedding-primary" />
