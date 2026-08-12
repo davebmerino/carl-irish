@@ -18,7 +18,7 @@ export default function SecondarySponsors() {
         </div>
         <div className="lg:col-span-2 flex flex-col text-center lg:justify-center">
           <h4 className="font-cormorant italic text-xl font-semibold text-wedding-primary mb-3">
-            Cord
+            TO BIND US TOGETHER
           </h4>
           <p className="font-manrope text-wedding-main">Ace Julius Aclan</p>
           <p className="font-manrope text-wedding-main">Charlene Collado</p>

@@ -10,7 +10,7 @@ const GodParents = function () {
           <li>Mr. Julius O. Muñoz</li>
           <li>Mr. Ferdinand Quirante</li>
           <li>Mr. Edilberto Flores</li>
-          <li>Mr. Richard Collado</li>
+          <li>Mr. Engle Bert Amparo</li>
           <li>Mr. John Lynch</li>
           <li>Mr. Crisaldo Cervo</li>
           <li>Mr. Julito Hinay</li>
@@ -32,7 +32,7 @@ const GodParents = function () {
           <li>Mrs. Emillete Quirante</li>
           <li>Mrs. Bonita Flores</li>
           <li>Mrs. Diana Mae Padcayan</li>
-          <li>Mrs. Helen Hernaez</li>
+          <li>Ms. Helen Hernaez</li>
           <li>Mrs. Alejandra Cervo</li>
           <li>Mrs. Ma Luz Cosio</li>
           <li>Mrs. Reggie Milca</li>

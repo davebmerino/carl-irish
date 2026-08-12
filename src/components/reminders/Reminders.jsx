@@ -20,12 +20,13 @@ export default function Reminders() {
               transition={{ duration: 1, ease: "easeInOut", delay: 0.22 }}
               className="bg-white/90 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-wedding-secondary/30">
               <h3 className="font-cormorant italic text-2xl font-semibold text-wedding-deep mb-4">
-                Children
+                Our Simple Request
               </h3>
               <p className="font-manrope text-wedding-main leading-relaxed">
-                To allow all of our guests to celebrate without distraction, we
-                respectfully request that the wedding reception be an
-                adults-only event. Thank you for your understanding.
+                We can’t wait to celebrate with you! To preserve the privacy of
+                our special day, please keep our wedding website link private
+                and do not share it. we want to keep our wedding as intimate and
+                personal as possible.
               </p>
             </motion.div>
             <motion.div

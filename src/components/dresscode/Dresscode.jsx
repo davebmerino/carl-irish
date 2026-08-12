@@ -12,9 +12,10 @@ export default function Dresscode() {
         <div className="max-w-5xl mx-auto text-center">
           <Shirt className="mx-auto text-[#879a78] mb-4" size={36} />
           <motion.h2
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, ease: "easeInOut", delay: 0.22 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.7 }}
             className="font-script text-5xl md:text-6xl text-wedding-deep text-center mb-12">
             Dress Code
           </motion.h2>
@@ -23,12 +24,13 @@ export default function Dresscode() {
             our wedding palette. <strong>Please avoid wearing white</strong>, as
             this color is reserved for the bride.
           </p>
-          <div className="relative w-full h-[680px] rounded-xl overflow-hidden shadow-xl">
+          <div className="mt-8 flex justify-center">
             <img
-              loading="lazy"
               src={dresscodeImg}
               alt="Dress Code"
-              className="absolute inset-0 w-full h-full object-cover"
+              loading="lazy"
+              decoding="async"
+              className="w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl h-auto rounded-xl shadow-xl object-contain"
             />
           </div>
           <div className="h-px w-24 bg-wedding-soft mx-auto mb-8"></div>
