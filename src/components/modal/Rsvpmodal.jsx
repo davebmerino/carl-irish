@@ -1,8 +1,9 @@
 import rsvp from "../../assets/weddingpictures/rsvp.jpg";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 
 export default function Rsvpmodal() {
+  const { id } = useParams();
   return (
     <>
       {/* RSVP Section with Photo */}
@@ -49,7 +50,7 @@ export default function Rsvpmodal() {
                 grateful for your presence as we celebrate this precious
                 occassion.
               </p>
-              <Link to="/:id/rsvp">
+              <Link to={id ? `/${id}/rsvp` : "/"}>
                 <button
                   className="bg-wedding-primary text-white px-10 py-4 rounded-full font-medium text-lg hover:bg-wedding-main transition-colors shadow-lg"
                   data-testid="rsvp-cta-button">
