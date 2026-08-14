@@ -15,6 +15,21 @@ export default function Reminders() {
           </motion.h2>
           <div className="space-y-6">
             <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, ease: "easeInOut", delay: 0.22 }}
+              className="bg-white/90 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-wedding-secondary/30">
+              <h3 className="font-cormorant italic text-2xl font-semibold text-wedding-deep mb-4">
+                A Special Reminder for Our Guests
+              </h3>
+              <p className="font-manrope text-wedding-main leading-relaxed">
+                A gentle reminder to our beloved guests: Please arrive by **2:00
+                PM** so we can begin the ceremony on time. We’re excited to
+                celebrate this special day with you. Thank you!
+              </p>
+            </motion.div>
+
+            <motion.div
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, ease: "easeInOut", delay: 0.22 }}
@@ -29,6 +44,7 @@ export default function Reminders() {
                 personal as possible.
               </p>
             </motion.div>
+
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}

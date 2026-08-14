@@ -10,6 +10,7 @@ import {
   Confetti,
   HandsPraying,
   DiscoBall,
+  MapPinIcon,
 } from "@phosphor-icons/react";
 
 import { motion } from "framer-motion";
@@ -17,6 +18,12 @@ import { motion } from "framer-motion";
 // const ringIcon = <FontAwesomeIcon icon="rings-wedding" />;
 
 const timeline = [
+  {
+    time: "2:00 PM",
+    title: "Guest Arrival",
+    icon: MapPinIcon,
+    side: "right",
+  },
   {
     time: "3:00 PM",
     title: "Ceremony",

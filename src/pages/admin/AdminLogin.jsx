@@ -5,7 +5,6 @@ import axios from "axios";
 
 const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
-console.log(API);
 
 const AdminLogin = () => {
   const navigate = useNavigate();

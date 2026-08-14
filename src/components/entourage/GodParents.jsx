@@ -7,7 +7,7 @@ const GodParents = function () {
         </h4>
 
         <ul className="space-y-2 font-manrope text-wedding-main text-center">
-          <li>Mr. Julius O. Muñoz</li>
+          <li>Mr. Julius Muñoz</li>
           <li>Mr. Ferdinand Quirante</li>
           <li>Mr. Edilberto Flores</li>
           <li>Mr. Engle Bert Amparo</li>

@@ -133,13 +133,13 @@ export default function Landingpage() {
 
           {/* Wedding Details */}
           <div className="space-y-3 mb-10 font-manrope text-wedding-main">
-            <p className="text-lg" data-testid="wedding-date">
+            <p className="text-xl" data-testid="wedding-date">
               <span className="font-medium uppercase">Are getting married</span>
             </p>
-            <p className="text-base" data-testid="wedding-time">
-              Saturday, October 3, 2026
+            <p className="text-lg " data-testid="wedding-time">
+              Saturday, October 3, 2026 | <strong>2PM</strong>
             </p>
-            <p className="text-base" data-testid="wedding-venue">
+            <p className="text-lg" data-testid="wedding-venue">
               @ St. Ursula Parish
               <br />
               Binangonan
