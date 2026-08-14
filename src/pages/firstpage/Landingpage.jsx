@@ -95,7 +95,7 @@ export default function Landingpage() {
                 data-testid="guest-name">
                 {guestName}
               </h1>
-              <p className="font-cormorant text-3xl md:text-2xl text-wedding-main italic">
+              <p className="font-cormorant text-2xl md:text-4xl text-wedding-main italic">
                 You Are Invited
               </p>
             </>
