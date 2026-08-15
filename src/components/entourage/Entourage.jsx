@@ -63,7 +63,7 @@ export default function Entourage() {
                     Parents of the Groom
                   </h4>
                   <p className="font-manrope text-wedding-main">
-                    Mr. Carmelito Cunanan Collado
+                    Mr. Carmelito Conanan Collado
                   </p>
                   <p className="font-manrope text-wedding-main">
                     Mrs. Editha Antazo Rivera
