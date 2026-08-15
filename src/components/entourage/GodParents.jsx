@@ -10,7 +10,7 @@ const GodParents = function () {
           <li>Mr. Julius Muñoz</li>
           <li>Mr. Ferdinand Quirante</li>
           <li>Mr. Edilberto Flores</li>
-          <li>Mr. Engle Bert Amparo</li>
+          <li>Mr. Engel Bert Amparo</li>
           <li>Mr. John Lynch</li>
           <li>Mr. Crisaldo Cervo</li>
           <li>Mr. Julito Hinay</li>

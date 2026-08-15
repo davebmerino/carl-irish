@@ -525,7 +525,7 @@ const AdminDashboard = () => {
               </div>
             ) : activeTab === "invites" ? (
               <>
-                <div className="flex justify-between items-center mb-6">
+                <div className="flex flex-col md:flex-row gap-3 justify-between items-center mb-6">
                   <h2 className="font-playfair text-2xl font-semibold text-wedding-deep">
                     Guest Invites
                   </h2>

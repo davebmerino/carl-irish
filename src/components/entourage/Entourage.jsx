@@ -7,7 +7,7 @@ import Bearer from "./Bearer.jsx";
 import FlowerGirls from "./FlowerGirls.jsx";
 const entourageData = {
   parents: {
-    groom: ["Mr.Carmelito Cunanan Collado", "Mrs.Editha Antazo Rivera"],
+    groom: ["Mr.Carmelito Conanan Collado", "Mrs.Editha Antazo Rivera"],
     bride: ["Mr.Alan Hernaez Maqui", "Mrs.Lailani Añonuevo De la Peña"],
   },
 };
