@@ -954,23 +954,72 @@ const AdminDashboard = () => {
                 />
               </div>
 
-              <div>
+              {/* <div>
                 <label className="block font-manrope text-wedding-main font-medium mb-2 text-sm">
                   Number of Guests
                 </label>
                 <input
                   type="number"
+                  min={1}
+                  max={10}
                   value={newGuest.number_of_guests}
-                  onChange={(e) =>
+                  onChange={(e) => {
+                    const value = Number(e.target.value);
+
+                    if (Number.isNaN(value)) {
+                      setNewGuest({ ...newGuest, number_of_guests: 1 });
+                      return;
+                    }
+
                     setNewGuest({
                       ...newGuest,
-                      number_of_guests: parseInt(e.target.value) || 1,
-                    })
-                  }
-                  min="1"
+                      number_of_guests: Math.max(1, Math.min(10, value)),
+                    });
+                  }}
                   className="w-full px-4 py-2 border-2 border-wedding-secondary rounded-lg focus:border-wedding-primary focus:outline-none font-manrope"
                   data-testid="guest-count-input"
                 />
+              </div> */}
+
+              <div className="space-y-2">
+                <label className="text-wedding-main font-medium">
+                  Number of Guests
+                </label>
+
+                <div className="flex items-center justify-between border border-wedding-secondary rounded-xl px-4 py-3 bg-white">
+                  <button
+                    type="button"
+                    onClick={() =>
+                      setNewGuest((prev) => ({
+                        ...prev,
+                        number_of_guests: Math.max(
+                          1,
+                          prev.number_of_guests - 1,
+                        ),
+                      }))
+                    }
+                    className="w-10 h-10 rounded-full border border-wedding-secondary text-wedding-deep text-xl font-bold hover:bg-wedding-primary/10 transition">
+                    −
+                  </button>
+
+                  <span className="text-xl font-semibold text-wedding-deep">
+                    {newGuest.number_of_guests}
+                  </span>
+                  <button
+                    type="button"
+                    onClick={() =>
+                      setNewGuest((prev) => ({
+                        ...prev,
+                        number_of_guests: Math.min(
+                          10,
+                          prev.number_of_guests + 1,
+                        ),
+                      }))
+                    }
+                    className="w-10 h-10 rounded-full border border-wedding-secondary text-wedding-deep text-xl font-bold hover:bg-wedding-primary/10 transition">
+                    +
+                  </button>
+                </div>
               </div>
 
               <div>

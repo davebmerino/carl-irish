@@ -104,17 +104,13 @@ export default function Rsvp() {
       setError("Please enter your name");
       return false;
     }
-    if (
-      !primaryGuest.email.trim() ||
-      !/\S+@\S+\.\S+/.test(primaryGuest.email)
-    ) {
+    // Email is optional
+    if (primaryGuest.email.trim() && !/\S+@\S+\.\S+/.test(primaryGuest.email)) {
       setError("Please enter a valid email address");
       return false;
     }
-    if (!primaryGuest.contact.trim()) {
-      setError("Please enter your contact number");
-      return false;
-    }
+
+    // Contact is optional
 
     // Validate additional guests
     for (let i = 0; i < additionalGuests.length; i++) {
@@ -123,12 +119,8 @@ export default function Rsvp() {
         setError(`Please enter name for guest ${i + 1}`);
         return false;
       }
-      if (!guest.email.trim() || !/\S+@\S+\.\S+/.test(guest.email)) {
+      if (guest.email.trim() && !/\S+@\S+\.\S+/.test(guest.email)) {
         setError(`Please enter a valid email for guest ${i + 1}`);
-        return false;
-      }
-      if (!guest.contact.trim()) {
-        setError(`Please enter contact number for guest ${i + 1}`);
         return false;
       }
     }
@@ -139,17 +131,12 @@ export default function Rsvp() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const emails = [
-      primaryGuest.email.trim().toLowerCase(),
-      ...additionalGuests.map((g) => g.email.trim().toLowerCase()),
-    ];
+    const emails = [primaryGuest.email, ...additionalGuests.map((g) => g.email)]
+      .filter(Boolean)
+      .map((e) => e.trim().toLowerCase());
 
     if (new Set(emails).size !== emails.length) {
       setError("Duplicate email addresses are not allowed.");
-      return false;
-    }
-
-    if (!validateForm()) {
       return;
     }
 
@@ -269,7 +256,7 @@ export default function Rsvp() {
 
                 <div>
                   <label className="block font-manrope text-wedding-main font-medium mb-2">
-                    Email Address *
+                    Email Address (Optional)
                   </label>
                   <input
                     type="email"
@@ -288,7 +275,7 @@ export default function Rsvp() {
 
                 <div>
                   <label className="block font-manrope text-wedding-main font-medium mb-2">
-                    Contact Number *
+                    Contact Number (Optional)
                   </label>
                   <input
                     type="tel"
@@ -390,7 +377,7 @@ export default function Rsvp() {
 
                   <div>
                     <label className="block font-manrope text-wedding-main font-medium mb-2">
-                      Email Address *
+                      Email Address (Optional)
                     </label>
                     <input
                       type="email"
@@ -406,7 +393,7 @@ export default function Rsvp() {
 
                   <div>
                     <label className="block font-manrope text-wedding-main font-medium mb-2">
-                      Contact Number *
+                      Contact Number (Optional)
                     </label>
                     <input
                       type="tel"
