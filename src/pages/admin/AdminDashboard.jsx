@@ -25,6 +25,7 @@ const API = `${BACKEND_URL}/api`;
 
 const AdminDashboard = () => {
   const navigate = useNavigate();
+  const [search, setSearch] = useState("");
   const [activeTab, setActiveTab] = useState("invites");
   const [invites, setInvites] = useState([]);
   const [rsvps, setRsvps] = useState([]);
@@ -397,6 +398,16 @@ const AdminDashboard = () => {
     downloadCSV(`wedding-invites-${dateStr}.csv`, rows.join("\n"));
   };
 
+  const filteredInvites = invites.filter((invite) => {
+    const term = search.toLowerCase();
+
+    return (
+      invite.name?.toLowerCase().includes(term) ||
+      invite.email?.toLowerCase().includes(term) ||
+      invite.contact?.toLowerCase().includes(term)
+    );
+  });
+
   return (
     <div className="min-h-screen bg-wedding-cream">
       <header className="bg-white/95 backdrop-blur-md shadow-sm border-b border-wedding-secondary">
@@ -518,6 +529,16 @@ const AdminDashboard = () => {
                   <h2 className="font-playfair text-2xl font-semibold text-wedding-deep">
                     Guest Invites
                   </h2>
+
+                  <div className="relative w-full md:w-80">
+                    <input
+                      type="text"
+                      value={search}
+                      onChange={(e) => setSearch(e.target.value)}
+                      placeholder="Search guest..."
+                      className="w-full px-4 py-2 border-2 border-wedding-secondary rounded-lg focus:border-wedding-primary focus:outline-none font-manrope"
+                    />
+                  </div>
                   <div className="flex flex-row gap-2">
                     <button
                       onClick={exportInvitesToCSV}
