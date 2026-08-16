@@ -618,7 +618,7 @@ const AdminDashboard = () => {
                   number_of_guests, notes (header row required)
                 </div>
 
-                {invites.length === 0 ? (
+                {filteredInvites.length === 0 ? (
                   <div className="text-center py-12 text-wedding-soft font-manrope">
                     No invites yet. Click &quot;Add Guest&quot; to create your
                     first invite.
@@ -646,7 +646,7 @@ const AdminDashboard = () => {
                         </tr>
                       </thead>
                       <tbody>
-                        {invites.map((invite) => (
+                        {filteredInvites.map((invite) => (
                           <tr
                             key={invite.id}
                             className="border-b border-wedding-secondary/30 hover:bg-wedding-cream/50"
