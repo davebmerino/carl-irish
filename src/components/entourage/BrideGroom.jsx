@@ -11,6 +11,7 @@ export default function BrideGroom() {
             <li>Marlo Maligaya</li>
             <li>Jovic Barandino </li>
             <li>Dave Edem</li>
+            <li>John Iverson Rivera</li>
           </ul>
         </div>
         <div>
