@@ -3,6 +3,7 @@ import FadeInSection from "../../components/common/FadeInSection.jsx";
 import Footer from "../../components/footer/Footer.jsx";
 import Reminders from "../../components/reminders/Reminders.jsx";
 import Contact from "../../components/contact/Contact.jsx";
+import ScrollToTopButton from "../../components/common/ScrollToTopButton.jsx";
 
 export default function RemindersPage() {
   return (
@@ -16,6 +17,7 @@ export default function RemindersPage() {
         <FadeInSection>
           <Contact />
         </FadeInSection>
+        <ScrollToTopButton />
       </div>
       <Footer />
     </>

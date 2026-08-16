@@ -4,6 +4,7 @@ import Ourstory from "../../components/ourstory/Ourstory.jsx";
 import Gallery from "../../components/gallery/Gallery.jsx";
 import TillDeathDoUsPart from "../../components/tilldeathdouspart/TillDeathDoUsPart.jsx";
 import FadeInSection from "../../components/common/FadeInSection.jsx";
+import ScrollToTopButton from "../../components/common/ScrollToTopButton.jsx";
 
 export default function OurStory() {
   return (
@@ -20,6 +21,7 @@ export default function OurStory() {
         <FadeInSection>
           <Gallery />
         </FadeInSection>
+        <ScrollToTopButton />
       </div>
       <Footer />
     </>

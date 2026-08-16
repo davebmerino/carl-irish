@@ -5,6 +5,7 @@ import Footer from "../../components/footer/Footer.jsx";
 import Eventdetails from "../../components/eventdetails/Eventdetails.jsx";
 import Dresscode from "../../components/dresscode/Dresscode.jsx";
 import FadeInSection from "../../components/common/FadeInSection.jsx";
+import ScrollToTopButton from "../../components/common/ScrollToTopButton.jsx";
 
 export default function Details() {
   return (
@@ -20,6 +21,7 @@ export default function Details() {
         <WeddingTimeline />
 
         <Dresscode />
+        <ScrollToTopButton />
       </div>
       <Footer />
     </>
