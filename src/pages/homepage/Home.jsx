@@ -15,6 +15,7 @@ import Calendar from "../../components/calendar/Calendar.jsx";
 import Rsvpmodal from "../../components/modal/Rsvpmodal.jsx";
 import Entourage from "../../components/entourage/Entourage.jsx";
 import WeddingFilm from "../../components/film/WeddingFilm.jsx";
+import ScrollToTopButton from "../../components/common/ScrollToTopButton.jsx";
 
 import FadeInSection from "../../components/common/FadeInSection.jsx";
 
@@ -67,6 +68,7 @@ export default function Home() {
 
         {/* Keep the modal mounted globally */}
         <Rsvpmodal />
+        <ScrollToTopButton />
       </div>
 
       <Footer />
